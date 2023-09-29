@@ -2,14 +2,14 @@ import logo from "./logo.svg";
 import "./App.css";
 import MetaTags from "react-meta-tags";
 import React, { useEffect } from "react";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 const TRACKING_ID = "G-KWZSMHDF23"; // OUR_TRACKING_ID
 
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.send(window.location.pathname);
   }, []);
 
   return (
