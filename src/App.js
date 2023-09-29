@@ -9,8 +9,7 @@ ReactGA.initialize(TRACKING_ID);
 
 function App() {
   useEffect(() => {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.pageview(window.location.pathname);
   }, []);
 
   return (
@@ -27,7 +26,7 @@ function App() {
       </MetaTags>
 
       <header className="App-header">
-        <script
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `
             window.dataLayer = window.dataLayer || [];
@@ -42,7 +41,7 @@ function App() {
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${TRACKING_ID}`}
-        />
+        /> */}
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
