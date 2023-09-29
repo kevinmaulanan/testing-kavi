@@ -3,7 +3,7 @@ import "./App.css";
 import MetaTags from "react-meta-tags";
 import React, { useEffect } from "react";
 import ReactGA from "react-ga";
-const TRACKING_ID = "G-S8H3WL303F"; // OUR_TRACKING_ID
+const TRACKING_ID = "G-KWZSMHDF23"; // OUR_TRACKING_ID
 
 ReactGA.initialize(TRACKING_ID);
 
