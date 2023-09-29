@@ -9,6 +9,7 @@ ReactGA.initialize(TRACKING_ID);
 
 function App() {
   useEffect(() => {
+    ReactGA.set({ page: window.location.pathname });
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
@@ -24,8 +25,24 @@ function App() {
         <meta name="author" content="Kavi" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </MetaTags>
-      <div class="content"> Some Content </div>
+
       <header className="App-header">
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${TRACKING_ID}');
+            page_path: window.location.pathname,
+          `,
+          }}
+        />
+
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${TRACKING_ID}`}
+        />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
