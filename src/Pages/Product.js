@@ -5,7 +5,7 @@ import Banner from "../Components/Banner";
 import Content from "../Components/Content";
 import ContentProduct from "../Components/ContentProduct";
 
-export default function Tag() {
+export default function Product() {
   const navigate = useNavigate();
 
   const redirectPage = (page) => {

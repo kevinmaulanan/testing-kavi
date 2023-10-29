@@ -14,6 +14,7 @@ ReactGA.initialize(TRACKING_ID);
 
 function App() {
   useEffect(() => {
+    console.log("React Page View", window.location.pathname);
     ReactGA.send(window.location.pathname);
   }, []);
 
