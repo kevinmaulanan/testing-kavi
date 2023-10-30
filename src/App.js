@@ -1,5 +1,7 @@
 import Routers from "./Routers/Routers";
 import "./App.css";
+import "./Components/css/index.css";
+import "./Components/css/zoom-in.css";
 import MetaTags from "react-meta-tags";
 import React, { useEffect } from "react";
 import ReactGA from "react-ga4";
@@ -14,18 +16,18 @@ ReactGA.initialize(TRACKING_ID);
 
 function App() {
   useEffect(() => {
-    console.log("React Page View", window.location.pathname);
     ReactGA.send({
       hitType: "pageview",
       page: window.location.pathname,
       title: window.location.pathname,
     });
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
   return (
     <div className="App">
       <MetaTags>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta name="description" content="Vestia Zeta and Kavi" />
         <meta
           name="keywords"
@@ -34,7 +36,7 @@ function App() {
         <meta name="author" content="Kavi" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"

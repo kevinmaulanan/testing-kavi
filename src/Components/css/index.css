@@ -5,3 +5,26 @@
             line-clamp: 2; 
     -webkit-box-orient: vertical;
  }
+
+ .background-image-all {
+        position: relative;
+}
+
+.background-image-all:before {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+        background-image: url('https://wallpaperaccess.com/full/289374.jpg');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+        z-index: -1;
+}
+
+.MuiLoadingButton-root {
+        background-color: #FFF;
+      }

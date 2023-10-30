@@ -5,69 +5,18 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, Grid, Box, Link } from "@mui/material";
 
-import "./css/index.css";
+import ContentTitle from "./ContentTitle";
 
-const costumes = [
-  {
-    name: "DEFAULT",
-    description: "Costume pertama ketika debut",
-    image: `${process.env.REACT_APP_WEB_URL}/costume/vestia-zeta-costume-default.png`,
-  },
-  {
-    name: "KIMONO",
-    description: "Costume kedua yaitu kimono",
-    image: `${process.env.REACT_APP_WEB_URL}/costume/vestia-zeta-costume-kimono.png`,
-  },
-  {
-    name: "GELORA",
-    description: "Costume ketiga yaitu gelora",
-    image: `${process.env.REACT_APP_WEB_URL}/costume/vestia-zeta-costume-gelora.png`,
-  },
-];
 export default function ContentCostume(props) {
   return (
     <Box sx={{ marginTop: 10 }}>
-      <Box sx={{ display: "flex" }} mb={3}>
-        <Box
-          width={"40%"}
-          sx={{
-            display: { display: "flex", justifyContent: "flex-start" },
-          }}>
-          <Typography
-            variant="h4"
-            noWrap
-            sx={{
-              fontFamily: "monospace",
-              fontWeight: 700,
-              color: "black",
-            }}>
-            {props.contentTitle}
-          </Typography>
-        </Box>
-        <Box
-          width={"60%"}
-          sx={{
-            display: { display: "flex", justifyContent: "flex-end" },
-          }}>
-          <Link underline="none" href="product">
-            <Typography
-              variant="h6"
-              noWrap
-              sx={{
-                fontWeight: "bold",
-                color: "#808080",
-              }}>
-              Lihat Semua
-            </Typography>
-          </Link>
-        </Box>
-      </Box>
+      <ContentTitle {...props} />
 
       <Grid container rowSpacing={2}>
-        {costumes &&
-          costumes.map((costume) => (
-            <Grid item xs={12}>
-              <Card sx={{ display: "flex" }}>
+        {props.data &&
+          props.data.map((costume) => (
+            <Grid item xs={12} key={costume.id}>
+              <Card variant="outlined" sx={{ display: "flex" }}>
                 <CardMedia
                   component="img"
                   sx={{ width: 450, height: 250, objectPosition: "70% 5%" }}

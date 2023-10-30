@@ -13,10 +13,11 @@ import InputBase from "@mui/material/InputBase";
 import MenuItem from "@mui/material/MenuItem";
 
 import SearchIcon from "@mui/icons-material/Search";
+import ReactGA from "react-ga4";
 
 const pages = [
   { name: "Home", tag: "/" },
-  { name: "Video", tag: "/clip" },
+  { name: "Video", tag: "/video" },
   { name: "Product", tag: "/product" },
 ];
 
@@ -75,8 +76,13 @@ function Layout(props) {
   };
 
   React.useEffect(() => {
-    console.log(window.location.pathname, "indow.location.pathname");
     setMenuActive(window.location.pathname);
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname,
+      title: window.location.pathname,
+    });
   }, [window.location.pathname]);
 
   return (
