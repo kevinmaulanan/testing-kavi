@@ -1,7 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-
-import ReactGA from "react-ga4";
 import { Typography, Box, Container } from "@mui/material";
 
 import Layout from "../Components/Layout";
@@ -17,6 +15,7 @@ import {
   VideoTagData,
   CostumeData,
 } from "../DummyData/index";
+import { AddPageViewGA, AddActionGA, AddEventGA } from "../Services/GA";
 
 export default function Video() {
   const navigate = useNavigate();
@@ -25,47 +24,39 @@ export default function Video() {
   const [isHideButton, setIsHideButton] = useState(false);
   const [limit, setLimit] = useState(12);
   const [page, setPage] = useState(1);
-  const [offset, setOffset] = useState(0);
   const [data, setData] = useState([]);
 
   const redirectPage = (page) => {
-    ReactGA.event({
-      category: "navbar",
-      action: "click",
-      label: page,
-    });
+    AddActionGA("click", "navbar", page);
     navigate(page);
   };
 
   const redirectPageByButton = (name, page) => {
-    ReactGA.event({
-      category: name,
-      action: "click_see_all_button_from_video_page",
-      label: "Click See All Button - " + name,
-    });
+    AddActionGA(
+      "click_see_all_button_from_video_page",
+      "Click See All Button - " + name,
+      page
+    );
     navigate(page);
   };
 
   const onClickSetTagActive = (tag) => {
-    ReactGA.event({
-      category: "video_tag",
-      action: "click",
-      label: tag.name,
-    });
+    AddEventGA("click", "video_tag", tag.name);
     setTagActiveId(tag.id);
   };
 
   const loadItem = () => {
-    ReactGA.event({
-      category: "button_load_video",
-      action: "click",
-      label: "Button Load Video - Page " + page,
-    });
+    AddEventGA(
+      "click",
+      "button_load_video",
+      "Button Load Video - Page " + page
+    );
+
     setIsLoading(true);
     setTimeout(function () {
       setPage(page + 1);
       setData(VideoData.slice(0, limit * (page + 1)));
-      if (VideoData.length == VideoData.slice(0, limit * (page + 1)).length) {
+      if (VideoData.length === VideoData.slice(0, limit * (page + 1)).length) {
         setIsHideButton(true);
       }
       setIsLoading(false);
@@ -73,6 +64,8 @@ export default function Video() {
   };
 
   useEffect(() => {
+    let pathname = window.location.pathname;
+    AddPageViewGA(pathname, pathname);
     setData(VideoData.slice(0, limit));
   }, []);
 
@@ -80,13 +73,13 @@ export default function Video() {
     <div style={{ marginBottom: 40 }} className="background-image-all">
       <Layout redirectPage={redirectPage} />
       <Container>
+        <div style={{ marginTop: 100 }} />
         <Box
           sx={{
             display: {
               display: "flex",
               justifyContent: "center",
               marginBottom: 20,
-              marginTop: 40,
             },
           }}>
           <Typography
@@ -103,16 +96,22 @@ export default function Video() {
         <TagItem
           data={VideoTagData}
           tagActiveId={tagActiveId}
+          redirectPage={redirectPage}
           onClickSetTagActive={onClickSetTagActive}
         />
-        <CardItem data={data} />
-        {isHideButton == false && (
+        <CardItem
+          data={data}
+          redirectPage={redirectPage}
+          redirectUrl="/video"
+        />
+        {isHideButton === false && (
           <ButtonPagination isLoading={isLoading} loadItem={loadItem} />
         )}
 
         <ContentProduct
           contentTitle="Lihat Juga Productnya"
           data={ProductData.slice(0, 4)}
+          redirectPage={redirectPage}
           redirectPageByButton={redirectPageByButton}
           redirectUrl="/product"
           labelName="product"
@@ -121,6 +120,7 @@ export default function Video() {
         <ContentCostume
           contentTitle="Lihat Juga Costumenya"
           data={CostumeData.slice(0, 4)}
+          redirectPage={redirectPage}
           redirectPageByButton={redirectPageByButton}
           redirectUrl="/costume"
           labelName="costume"

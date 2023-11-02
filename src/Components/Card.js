@@ -20,7 +20,10 @@ export default function CardItem(props) {
                   borderColor: `green`,
                   border: 1,
                 },
-              }}>
+              }}
+              onClick={() =>
+                props.redirectPage(props.redirectUrl + "/" + item.id)
+              }>
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -39,7 +42,7 @@ export default function CardItem(props) {
                     color="text.secondary"
                     align="justify"
                     className="content-body-text">
-                    {item.description}
+                    {item.description || item.title}
                   </Typography>
                 </CardContent>
               </CardActionArea>

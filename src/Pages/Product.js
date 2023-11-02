@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-import ReactGA from "react-ga4";
 import { Typography, Box, Link, Container } from "@mui/material";
 
 import Layout from "../Components/Layout";
@@ -17,6 +16,7 @@ import {
   ProductTagData,
   CostumeData,
 } from "../DummyData/index";
+import { AddPageViewGA, AddActionGA, AddEventGA } from "../Services/GA";
 
 export default function Video() {
   const navigate = useNavigate();
@@ -27,45 +27,43 @@ export default function Video() {
   const [page, setPage] = useState(1);
   const [data, setData] = useState([]);
 
+  useEffect(() => {
+    let pathname = window.location.pathname;
+    AddPageViewGA(pathname, pathname);
+    setData(ProductData.slice(0, limit));
+  }, []);
+
   const redirectPage = (page) => {
-    ReactGA.event({
-      category: "navbar",
-      action: "click",
-      label: page,
-    });
+    AddActionGA("click", "navbar", page);
     navigate(page);
   };
 
   const redirectPageByButton = (name, page) => {
-    ReactGA.event({
-      category: name,
-      action: "click_see_all_button_from_product_page",
-      label: "Click See All Button - " + name,
-    });
+    AddActionGA(
+      "click_see_all_button_from_product_page",
+      "Click See All Button - " + name,
+      page
+    );
     navigate(page);
   };
 
   const onClickSetTagActive = (tag) => {
-    ReactGA.event({
-      category: "product_tag",
-      action: "click",
-      label: tag.name,
-    });
+    AddEventGA("click", "product_tag", tag.name);
     setTagActiveId(tag.id);
   };
 
   const loadItem = () => {
-    ReactGA.event({
-      category: "button_load_product",
-      action: "click",
-      label: "Button Load Product - Page " + page,
-    });
+    AddEventGA(
+      "click",
+      "button_load_product",
+      "Button Load Product - Page " + page
+    );
     setIsLoading(true);
     setTimeout(function () {
       setPage(page + 1);
       setData(ProductData.slice(0, limit * (page + 1)));
       if (
-        ProductData.length == ProductData.slice(0, limit * (page + 1)).length
+        ProductData.length === ProductData.slice(0, limit * (page + 1)).length
       ) {
         setIsHideButton(true);
       }
@@ -73,21 +71,17 @@ export default function Video() {
     }, 1000);
   };
 
-  useEffect(() => {
-    setData(ProductData.slice(0, limit));
-  }, []);
-
   return (
     <div style={{ marginBottom: 40 }} className="background-image-all">
       <Layout redirectPage={redirectPage} />
       <Container>
+        <div style={{ marginTop: 100 }} />
         <Box
           sx={{
             display: {
               display: "flex",
               justifyContent: "center",
               marginBottom: 20,
-              marginTop: 40,
             },
           }}>
           <Typography
@@ -109,13 +103,14 @@ export default function Video() {
         />
 
         <CardProductItem data={data} />
-        {isHideButton == false && (
+        {isHideButton === false && (
           <ButtonPagination isLoading={isLoading} loadItem={loadItem} />
         )}
 
         <Content
           contentTitle="Lihat Juga Videonya"
           data={VideoData.slice(0, 4)}
+          redirectPage={redirectPage}
           redirectPageByButton={redirectPageByButton}
           redirectUrl="/video"
           labelName="video"
@@ -124,6 +119,7 @@ export default function Video() {
         <ContentCostume
           contentTitle="Lihat Juga Costumenya"
           data={CostumeData.slice(0, 4)}
+          redirectPage={redirectPage}
           redirectPageByButton={redirectPageByButton}
           redirectUrl="/costume"
           labelName="costume"

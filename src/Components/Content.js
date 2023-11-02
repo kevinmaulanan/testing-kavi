@@ -19,7 +19,7 @@ export default function Content(props) {
     <Box sx={{ marginTop: 10 }}>
       <ContentTitle {...props} />
 
-      <CardItem data={props.data} />
+      <CardItem {...props} />
     </Box>
   );
 }

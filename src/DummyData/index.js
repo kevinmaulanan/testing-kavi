@@ -1,226 +1,577 @@
 exports.VideoData = [
   {
     id: 1,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    images: [
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+    ],
     price: 1000000,
     qty: 20,
   },
   {
     id: 2,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    images: [
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+    ],
     price: 1000000,
     qty: 20,
   },
   {
     id: 3,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    images: [
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+    ],
     price: 1000000,
     qty: 20,
   },
   {
     id: 4,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    images: [
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+    ],
     price: 1000000,
     qty: 20,
   },
   {
     id: 5,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    images: [
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+    ],
   },
   {
     id: 6,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    images: [
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+    ],
   },
   {
     id: 7,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    images: [
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+    ],
   },
   {
     id: 8,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    images: [
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+    ],
   },
   {
     id: 9,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    images: [
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+    ],
   },
   {
     id: 10,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    images: [
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+    ],
   },
   {
     id: 11,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    images: [
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+    ],
   },
   {
     id: 12,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    images: [
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+    ],
   },
   {
     id: 13,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    images: [
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+    ],
   },
   {
     id: 14,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    images: [
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+    ],
   },
   {
     id: 15,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    images: [
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+    ],
   },
   {
     id: 16,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    images: [
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+    ],
   },
   {
     id: 17,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    images: [
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+      },
+      {
+        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+      },
+    ],
   },
 ];
 
 exports.EventData = [
   {
     id: 1,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
   {
     id: 2,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
   {
     id: 3,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
   {
     id: 4,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
   {
     id: 5,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
   },
   {
     id: 6,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    title: "Video Baru Zeta",
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
   },
   {
     id: 7,
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
   },
   {
     id: 8,
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
   },
   {
     id: 9,
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
   },
   {
     id: 10,
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
   },
   {
     id: 11,
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
   },
   {
     id: 12,
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
   },
   {
     id: 13,
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
   },
   {
     id: 14,
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
   },
   {
     id: 15,
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
   },
   {
     id: 16,
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
   },
   {
     id: 17,
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
   },
 ];
 
@@ -230,7 +581,7 @@ exports.ProductData = [
     name: "CARD",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
@@ -239,7 +590,7 @@ exports.ProductData = [
     name: "CARD",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
@@ -248,7 +599,7 @@ exports.ProductData = [
     name: "CARD",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
@@ -257,7 +608,7 @@ exports.ProductData = [
     name: "CARD",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
@@ -266,7 +617,7 @@ exports.ProductData = [
     name: "CARD",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
@@ -275,7 +626,7 @@ exports.ProductData = [
     name: "CARD",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
@@ -284,7 +635,7 @@ exports.ProductData = [
     name: "CARD",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
@@ -293,7 +644,7 @@ exports.ProductData = [
     name: "CARD",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
@@ -302,7 +653,7 @@ exports.ProductData = [
     name: "CARD",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
@@ -311,7 +662,7 @@ exports.ProductData = [
     name: "CARD",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
@@ -320,7 +671,7 @@ exports.ProductData = [
     name: "CARD",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
@@ -329,7 +680,7 @@ exports.ProductData = [
     name: "CARD",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
@@ -338,7 +689,7 @@ exports.ProductData = [
     name: "CARD",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
@@ -347,7 +698,7 @@ exports.ProductData = [
     name: "CARD",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
@@ -356,7 +707,7 @@ exports.ProductData = [
     name: "CARD",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
@@ -365,7 +716,7 @@ exports.ProductData = [
     name: "CARD",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
@@ -374,7 +725,7 @@ exports.ProductData = [
     name: "CARD",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
     price: 1000000,
     qty: 20,
   },
@@ -384,17 +735,17 @@ exports.CostumeData = [
   {
     name: "DEFAULT",
     description: "Costume pertama ketika debut",
-    image: `${process.env.REACT_APP_WEB_URL}/costume/vestia-zeta-costume-default.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/costume/vestia-zeta-costume-default.png`,
   },
   {
     name: "KIMONO",
     description: "Costume kedua yaitu kimono",
-    image: `${process.env.REACT_APP_WEB_URL}/costume/vestia-zeta-costume-kimono.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/costume/vestia-zeta-costume-kimono.png`,
   },
   {
     name: "GELORA",
     description: "Costume ketiga yaitu gelora",
-    image: `${process.env.REACT_APP_WEB_URL}/costume/vestia-zeta-costume-gelora.png`,
+    image: `${process.env.REACT_APP_WEB_URL}/image/costume/vestia-zeta-costume-gelora.png`,
   },
 ];
 

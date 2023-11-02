@@ -3,27 +3,15 @@ import "./App.css";
 import "./Components/css/index.css";
 import "./Components/css/zoom-in.css";
 import MetaTags from "react-meta-tags";
-import React, { useEffect } from "react";
 import ReactGA from "react-ga4";
 
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-const TRACKING_ID = "G-KWZSMHDF23"; // OUR_TRACKING_ID
-
-ReactGA.initialize(TRACKING_ID);
+import "react-image-gallery/styles/css/image-gallery.css";
 
 function App() {
-  useEffect(() => {
-    ReactGA.send({
-      hitType: "pageview",
-      page: window.location.pathname,
-      title: window.location.pathname,
-    });
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  }, []);
-
   return (
     <div className="App">
       <MetaTags>

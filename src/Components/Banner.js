@@ -7,9 +7,9 @@ import Link from "@mui/material/Link";
 import "./css/zoom-in.css";
 
 const banners = [
-  `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-1.png`,
-  `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-2.png`,
-  `${process.env.REACT_APP_WEB_URL}/banner/zeta-banner-3.jpg`,
+  `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+  `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+  `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
 ];
 
 export const DotButton = ({ selected, onClick }) => (
@@ -75,7 +75,7 @@ const Banner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       let indexUpdate = 0;
-      if (index == banners.length - 1) indexUpdate = 0;
+      if (index === banners.length - 1) indexUpdate = 0;
       else indexUpdate = index + 1;
 
       setImage(banners[indexUpdate]);

@@ -3,14 +3,9 @@ import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import InputBase from "@mui/material/InputBase";
-import MenuItem from "@mui/material/MenuItem";
 
 import SearchIcon from "@mui/icons-material/Search";
 import ReactGA from "react-ga4";
@@ -19,6 +14,7 @@ const pages = [
   { name: "Home", tag: "/" },
   { name: "Video", tag: "/video" },
   { name: "Product", tag: "/product" },
+  { name: "Costume", tag: "/costume" },
 ];
 
 const Search = styled("div")(({ theme }) => ({
@@ -26,10 +22,10 @@ const Search = styled("div")(({ theme }) => ({
   borderRadius: theme.shape.borderRadius,
   backgroundColor: alpha(theme.palette.common.white, 0.15),
   "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
+    // backgroundColor: alpha(theme.palette.common.white, 0.25),
   },
   marginLeft: 0,
-  width: "100%",
+  width: "100PX",
   [theme.breakpoints.up("sm")]: {
     marginLeft: theme.spacing(1),
     width: "auto",
@@ -54,10 +50,11 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create("width"),
     width: "100%",
+    color: "white",
     [theme.breakpoints.up("sm")]: {
       width: "12ch",
       "&:focus": {
-        width: "20ch",
+        // width: "20ch",
       },
     },
   },
@@ -67,30 +64,16 @@ function Layout(props) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [menuActive, setMenuActive] = React.useState("/");
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
   React.useEffect(() => {
     setMenuActive(window.location.pathname);
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    ReactGA.send({
-      hitType: "pageview",
-      page: window.location.pathname,
-      title: window.location.pathname,
-    });
   }, [window.location.pathname]);
 
   return (
-    <AppBar position="static" color="transparent">
+    <AppBar position="fixed" sx={{ backgroundColor: "white" }}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Typography
-            variant="h6"
+        <Toolbar disableGutters sx={{ height: 70 }}>
+          {/* <Typography
+            variant="h2"
             noWrap
             component="a"
             href="#app-bar-with-responsive-menu"
@@ -104,9 +87,17 @@ function Layout(props) {
               textDecoration: "none",
             }}>
             ZETA
-          </Typography>
+          </Typography> */}
 
-          {/* Untuk Mobile */}
+          <Box
+            component={"img"}
+            alt={"Logo Zeta"}
+            width={"180px"}
+            height={"80px"}
+            src={`${process.env.REACT_APP_WEB_URL}/image/logo-vestia-zeta.png`}
+          />
+
+          {/* Untuk Mobile
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -161,28 +152,53 @@ function Layout(props) {
               textDecoration: "none",
             }}>
             LOGO
-          </Typography>
+          </Typography> */}
 
           {/* Untuk Website */}
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1 }} />
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              backgroundColor: "#ffffffd1",
+              color: "black",
+              height: 40,
+              justifyContent: "center",
+              borderRadius: 50,
+              border: "2px solid #fff",
+              width: "100%",
+            }}>
             {pages &&
               pages.map((page) => (
                 <Button
                   key={page.name}
                   onClick={() => props.redirectPage(page.tag)}
                   sx={{
-                    my: 2,
+                    // my: 2,
                     color: "black",
                     display: "block",
-                    fontWeight: page.tag == menuActive ? "bold" : 300,
+                    fontWeight: page.tag === menuActive ? "bold" : "500",
+                    fontSize: 20,
+                    fontFamily: "monospace",
+                    marginLeft: 1,
+                    marginRight: 1,
+                    transition: "0.2s",
+                    "&:hover": {
+                      opacity: ".5",
+                    },
                   }}>
                   {page.name}
                 </Button>
               ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
-            <Search>
+          <Box
+            sx={{
+              backgroundColor: "#2d4b70",
+              borderRadius: 10,
+              width: "200px",
+              border: "2px solid #ffffffd1",
+            }}>
+            <Search sx={{ backgroundColor: "#2d4b70", borderRadius: 10 }}>
               <SearchIconWrapper>
                 <SearchIcon />
               </SearchIconWrapper>

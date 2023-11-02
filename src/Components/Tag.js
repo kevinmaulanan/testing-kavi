@@ -18,8 +18,8 @@ export default function Tag(props) {
             <Box
               sx={{
                 backgroundColor:
-                  props.tagActiveId == tag.id ? "#063f5c" : "white",
-                color: props.tagActiveId == tag.id ? "white" : "black",
+                  props.tagActiveId === tag.id ? "#063f5c" : "white",
+                color: props.tagActiveId === tag.id ? "white" : "black",
                 height: 50,
                 border: "1px solid #063f5c",
                 borderRadius: 3,

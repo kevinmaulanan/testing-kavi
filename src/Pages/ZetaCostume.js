@@ -1,22 +1,16 @@
 import { useNavigate } from "react-router-dom";
-import { Container } from "@mui/material";
+import { useEffect } from "react";
+import { Typography, Box, Container } from "@mui/material";
 
 import Layout from "../Components/Layout";
-import Banner from "../Components/Banner";
-import Content from "../Components/Content";
 import ContentProduct from "../Components/ContentProduct";
-import ContentCostume from "../Components/ContentCostume";
+import Content from "../Components/Content";
 
-import {
-  ProductData,
-  VideoData,
-  EventData,
-  CostumeData,
-} from "../DummyData/index";
-import { useEffect } from "react";
+import { VideoData, ProductData, CostumeData } from "../DummyData/index";
+import CardCostume from "../Components/CardCostume";
 import { AddPageViewGA, AddActionGA } from "../Services/GA";
 
-export default function Home() {
+export default function Costume() {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -31,7 +25,7 @@ export default function Home() {
 
   const redirectPageByButton = (name, page) => {
     AddActionGA(
-      "click_see_all_button_from_home_page",
+      "click_see_all_button_from_costume_page",
       "Click See All Button - " + name,
       page
     );
@@ -39,42 +33,47 @@ export default function Home() {
   };
 
   return (
-    <div style={{ marginBottom: 60 }} className="background-image-all">
+    <div style={{ marginBottom: 40 }} className="background-image-all">
       <Layout redirectPage={redirectPage} />
-      <div style={{ marginTop: 60 }} />
-      <Banner />
       <Container>
+        <div style={{ marginTop: 100 }} />
+        <Box
+          sx={{
+            display: {
+              display: "flex",
+              justifyContent: "center",
+              marginBottom: 20,
+            },
+          }}>
+          <Typography
+            variant="h1"
+            noWrap
+            sx={{
+              fontFamily: "monospace",
+              fontWeight: 700,
+              color: "black",
+            }}>
+            COSTUME
+          </Typography>
+        </Box>
+        <CardCostume data={CostumeData} />
+
         <Content
-          contentTitle="Video Clip"
+          contentTitle="Lihat Juga Videonya"
           data={VideoData.slice(0, 4)}
           redirectPage={redirectPage}
           redirectPageByButton={redirectPageByButton}
           redirectUrl="/video"
           labelName="video"
         />
+
         <ContentProduct
-          contentTitle="Product"
+          contentTitle="Lihat Juga Productnya"
           data={ProductData.slice(0, 4)}
           redirectPage={redirectPage}
           redirectPageByButton={redirectPageByButton}
           redirectUrl="/product"
           labelName="product"
-        />
-        <ContentCostume
-          contentTitle="Costume"
-          data={CostumeData.slice(0, 4)}
-          redirectPage={redirectPage}
-          redirectPageByButton={redirectPageByButton}
-          redirectUrl="/costume"
-          labelName="costume"
-        />
-        <Content
-          contentTitle="Event"
-          data={EventData.slice(0, 4)}
-          redirectPage={redirectPage}
-          redirectPageByButton={redirectPageByButton}
-          redirectUrl="/event"
-          labelName="event"
         />
       </Container>
     </div>
