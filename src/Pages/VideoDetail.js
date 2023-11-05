@@ -21,9 +21,15 @@ export default function ContentVideoDetail(props) {
     let pathname = window.location.pathname;
     AddPageViewGA(pathname, pathname);
     let findData = _.find(VideoData, { id: parseInt(id) });
-    console.log(findData, { id }, "fiind dataxsx");
     setData(findData);
   }, []);
+
+  useEffect(() => {
+    let pathname = window.location.pathname;
+    AddPageViewGA(pathname, pathname);
+    let findData = _.find(VideoData, { id: parseInt(id) });
+    setData(findData);
+  }, [id]);
 
   const redirectPage = (page) => {
     AddActionGA("click", "navbar", page);

@@ -29,8 +29,11 @@
         background-color: #FFF;
       }
 
-      .image-gallery-thumbnail img {
-        height: 50px;
-      }
+      
 
+      @media only screen and (max-width: 800px) {
+        .image-gallery-thumbnail img {
+        height: 50px;
+        }
+      }
     

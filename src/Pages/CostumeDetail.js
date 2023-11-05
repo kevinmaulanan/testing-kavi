@@ -50,7 +50,7 @@ export default function CostumeDetail() {
       "Click See All Button - " + name,
       page
     );
-    navigate(page);
+    navigate(page + `?tag=${data.name}_COSTUME`);
   };
 
   return (
@@ -85,7 +85,6 @@ export default function CostumeDetail() {
             items={data.images || []}
             // thumbnailPosition={"left"}
             showFullscreenButton={true}
-            additionalClass={{ width: 100 }}
           />
         </Box>
 
@@ -94,8 +93,9 @@ export default function CostumeDetail() {
           data={videoData.slice(0, 4)}
           redirectPage={redirectPage}
           redirectPageByButton={redirectPageByButton}
-          redirectUrl={`/video?tag=${data.name}_COSTUME`}
-          labelName={`video?tag=${data.name}_COSTUME`}
+          redirectUrl={`/video`}
+          labelName={`video`}
+          isList={true}
         />
 
         <ContentProduct
