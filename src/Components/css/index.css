@@ -30,11 +30,7 @@
       }
 
       .image-gallery-thumbnail img {
-        height: 70px;
+        height: 50px;
       }
 
-      @media screen and (min-width: 800px) {
-        .image-gallery-thumbnail img {
-                height: 120px;
-        }
-      }
+    
