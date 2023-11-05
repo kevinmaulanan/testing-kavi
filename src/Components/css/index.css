@@ -28,3 +28,13 @@
 .MuiLoadingButton-root {
         background-color: #FFF;
       }
+
+      .image-gallery-thumbnail img {
+        height: 70px;
+      }
+
+      @media screen and (min-width: 800px) {
+        .image-gallery-thumbnail img {
+                height: 120px;
+        }
+      }

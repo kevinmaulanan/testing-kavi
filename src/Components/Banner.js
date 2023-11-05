@@ -97,7 +97,12 @@ const Banner = () => {
   }, [embla, setScrollSnaps, onSelect]);
 
   return (
-    <Box sx={{ displat: "flex", position: "relative", marginBottom: 5 }}>
+    <Box
+      sx={{
+        displat: "flex",
+        position: "relative",
+        marginBottom: { xs: 0, md: 5 },
+      }}>
       <Box
         width={"100%"}
         ref={emblaRef}

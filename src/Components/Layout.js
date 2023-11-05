@@ -6,9 +6,19 @@ import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import InputBase from "@mui/material/InputBase";
-
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
-import ReactGA from "react-ga4";
+import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
+import Divider from "@mui/material/Divider";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import InboxIcon from "@mui/icons-material/MoveToInbox";
+import MailIcon from "@mui/icons-material/Mail";
+import HumbergerIcon from "@mui/icons-material/Menu";
 
 const pages = [
   { name: "Home", tag: "/" },
@@ -63,10 +73,49 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 function Layout(props) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [menuActive, setMenuActive] = React.useState("/");
+  const [state, setState] = React.useState({
+    top: false,
+    left: false,
+    bottom: false,
+    right: false,
+  });
 
   React.useEffect(() => {
     setMenuActive(window.location.pathname);
   }, [window.location.pathname]);
+
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+
+    setState({ ...state, [anchor]: open });
+  };
+
+  const list = (anchor) => (
+    <Box
+      sx={{ width: 250 }}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}>
+      <List>
+        {pages.map((page, index) => (
+          <ListItem key={page.name} disablePadding>
+            <ListItemButton onClick={() => props.redirectPage(page.tag)}>
+              <ListItemIcon>
+                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary={page.name} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <Divider />
+    </Box>
+  );
 
   return (
     <AppBar position="fixed" sx={{ backgroundColor: "white" }}>
@@ -88,72 +137,39 @@ function Layout(props) {
             }}>
             ZETA
           </Typography> */}
-
           <Box
             component={"img"}
             alt={"Logo Zeta"}
+            sx={{
+              width: { xs: "100px", md: "180px" },
+            }}
             width={"180px"}
             height={"80px"}
             src={`${process.env.REACT_APP_WEB_URL}/image/logo-vestia-zeta.png`}
           />
 
-          {/* Untuk Mobile
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit">
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}>
-              {pages &&
-                pages.map((page) => (
-                  <MenuItem
-                    key={page.name}
-                    onClick={() => props.redirectPage(page.tag)}>
-                    <Typography textAlign="center">{page.name}</Typography>
-                  </MenuItem>
-                ))}
-            </Menu>
-          </Box>
-
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
+          {/* Untuk Mobile */}
+          <Box
             sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "black",
-              textDecoration: "none",
+              display: { xs: "flex", md: "none" },
+              justifyContent: "flex-end",
+              width: "100%",
             }}>
-            LOGO
-          </Typography> */}
-
+            <React.Fragment key={"left"}>
+              <Button
+                sx={{ color: "black" }}
+                onClick={toggleDrawer("left", true)}>
+                <HumbergerIcon />
+              </Button>
+              <Drawer
+                anchor={"left"}
+                open={state["left"]}
+                onClose={toggleDrawer("left", false)}>
+                {list()}
+              </Drawer>
+            </React.Fragment>
+          </Box>
           {/* Untuk Website */}
           <Box sx={{ flexGrow: 1 }} />
           <Box
@@ -190,13 +206,13 @@ function Layout(props) {
                 </Button>
               ))}
           </Box>
-
           <Box
             sx={{
               backgroundColor: "#2d4b70",
               borderRadius: 10,
               width: "200px",
               border: "2px solid #ffffffd1",
+              display: { xs: "none", md: "flex" },
             }}>
             <Search sx={{ backgroundColor: "#2d4b70", borderRadius: 10 }}>
               <SearchIconWrapper>

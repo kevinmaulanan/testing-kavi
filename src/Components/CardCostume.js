@@ -11,7 +11,17 @@ export default function CardCostume(props) {
       {props.data &&
         props.data.map((costume) => (
           <Grid item xs={12} key={costume.id}>
-            <Card variant="outlined" sx={{ display: "flex" }}>
+            <Card
+              variant="outlined"
+              sx={{
+                display: "flex",
+                "&:hover": {
+                  cursor: "pointer",
+                },
+              }}
+              onClick={() =>
+                props.redirectPage(props.redirectUrl + "/" + costume.id)
+              }>
               <CardMedia
                 component="img"
                 sx={{ width: 450, height: 250, objectPosition: "70% 5%" }}
@@ -25,12 +35,13 @@ export default function CardCostume(props) {
                   flexDirection: "column",
                   alignItems: "center",
                   justifyContent: "center",
-                  marginLeft: "-200px",
+                  marginLeft: { md: "-200px", sx: 0 },
                 }}>
                 <Typography
                   component="div"
                   variant="h4"
                   sx={{
+                    display: { xs: "none", md: "flex" },
                     fontFamily: "monospace",
                     fontWeight: 700,
                     color: "black",
@@ -41,6 +52,7 @@ export default function CardCostume(props) {
                   component="div"
                   variant="h5"
                   sx={{
+                    display: { xs: "none", md: "flex" },
                     fontFamily: "monospace",
                     color: "black",
                   }}>
@@ -48,7 +60,15 @@ export default function CardCostume(props) {
                 </Typography>
               </CardContent>
 
-              <Button variant="contained" sx={{ backgroundColor: "#27C7FF" }}>
+              <Button
+                variant="contained"
+                sx={{
+                  display: { xs: "none", md: "flex" },
+                  backgroundColor: "#27C7FF",
+                }}
+                onClick={() =>
+                  props.redirectPage(props.redirectUrl + "/" + costume.id)
+                }>
                 VIEW MORE
               </Button>
             </Card>

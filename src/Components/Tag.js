@@ -10,8 +10,11 @@ export default function Tag(props) {
     <Grid
       container
       rowSpacing={1}
-      columnSpacing={{ xs: 1, sm: 1, md: 1 }}
-      sx={{ marginBottom: "30px", marginTop: "30px" }}>
+      columnSpacing={{ xs: 0.5, sm: 1, md: 1 }}
+      sx={{
+        marginBottom: { xs: "10px", md: "30px" },
+        marginTop: { xs: "5px", md: "30px" },
+      }}>
       {props.data &&
         props.data.map((tag) => (
           <Grid item xs={3} key={tag.id}>
@@ -20,9 +23,9 @@ export default function Tag(props) {
                 backgroundColor:
                   props.tagActiveId === tag.id ? "#063f5c" : "white",
                 color: props.tagActiveId === tag.id ? "white" : "black",
-                height: 50,
+                height: { xs: 20, md: 50 },
                 border: "1px solid #063f5c",
-                borderRadius: 3,
+                borderRadius: { xs: 1, md: 3 },
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -34,7 +37,6 @@ export default function Tag(props) {
               }}
               onClick={() => props.onClickSetTagActive(tag)}>
               <Typography
-                variant="h4"
                 noWrap
                 component="a"
                 sx={{
@@ -43,6 +45,7 @@ export default function Tag(props) {
                   fontWeight: "bold",
                   textDecoration: "none",
                   textAlign: "center",
+                  fontSize: { xs: "8px", md: "20px" },
                 }}>
                 {tag.name}
               </Typography>

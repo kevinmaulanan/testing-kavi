@@ -23,6 +23,11 @@ export default function Costume() {
     navigate(page);
   };
 
+  const redirectPageDetail = (page) => {
+    AddActionGA("click", "item_detail", page);
+    navigate(page);
+  };
+
   const redirectPageByButton = (name, page) => {
     AddActionGA(
       "click_see_all_button_from_costume_page",
@@ -46,17 +51,21 @@ export default function Costume() {
             },
           }}>
           <Typography
-            variant="h1"
             noWrap
             sx={{
               fontFamily: "monospace",
               fontWeight: 700,
               color: "black",
+              fontSize: { xs: "24px", md: "32px" },
             }}>
             COSTUME
           </Typography>
         </Box>
-        <CardCostume data={CostumeData} />
+        <CardCostume
+          data={CostumeData}
+          redirectPage={redirectPageDetail}
+          redirectUrl="/costume"
+        />
 
         <Content
           contentTitle="Lihat Juga Videonya"

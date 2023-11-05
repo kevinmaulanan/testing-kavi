@@ -10,7 +10,7 @@ export default function CardProductItem(props) {
     <Grid container rowSpacing={2} columnSpacing={{ xs: 4, sm: 4, md: 4 }}>
       {props.data &&
         props.data.map((item) => (
-          <Grid item xs={3} key={item.id}>
+          <Grid item xs={12} md={3} key={item.id}>
             <Card variant="outlined" sx={{ display: "flex" }}>
               <Box sx={{ display: "flex", flexDirection: "row" }}>
                 <CardMedia

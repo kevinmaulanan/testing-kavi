@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ImageGallery from "react-image-gallery";
 import _ from "lodash";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 import { Container, Typography, Box } from "@mui/material";
 
@@ -12,7 +12,7 @@ import Content from "../Components/Content";
 import { VideoData, ProductData } from "../DummyData/index";
 import { AddPageViewGA, AddActionGA } from "../Services/GA";
 
-export default function ContentVideoDetailTop(props) {
+export default function ContentVideoDetail(props) {
   const { id } = useParams();
   const navigate = useNavigate();
   const [data, setData] = useState({});
@@ -39,32 +39,34 @@ export default function ContentVideoDetailTop(props) {
     navigate(page);
   };
 
-  console.log(data.images);
   return (
     <div style={{ marginBottom: 40 }} className="background-image-all">
       <Layout redirectPage={redirectPage} />
       <Container>
         <div style={{ marginTop: 100 }} />
         <Typography
-          variant="h2"
-          noWrap
+          // variant="h4"
           sx={{
             fontFamily: "monospace",
             fontWeight: 700,
             color: "black",
             marginBottom: 2,
+            textAlign: "start",
+            marginTop: 3,
+            fontSize: { xs: "12px", md: "20px" },
           }}>
           {data.title}
         </Typography>
+
         <ImageGallery
           items={data.images || []}
-          thumbnailPosition="left"
+          // thumbnailPosition="left"
           showFullscreenButton={true}
         />
 
         <Box
           sx={{
-            marginTop: 5,
+            marginTop: { xs: 1, md: 5 },
             height: 50,
             width: "100%",
             borderRadius: 3,
@@ -72,39 +74,42 @@ export default function ContentVideoDetailTop(props) {
             alignItems: "center",
             justifyContent: "center",
           }}>
-          <Box
-            sx={{
-              width: 200,
-              height: 50,
-              color: "white",
-              border: "1px solid #063f5c",
-              borderRadius: 3,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-
-              backgroundColor: "#063f5c",
-              color: "white",
-
-              "&:hover": {
-                cursor: "pointer",
-              },
-            }}
-            href={data.redirectUrl}>
-            <Typography
-              variant="h4"
-              noWrap
-              component="a"
+          <Link
+            to={data.redirectUrl}
+            style={{ textDecoration: "none" }}
+            target="_blank">
+            <Box
               sx={{
+                width: { xs: "110px", md: "200px" },
+                height: { xs: "40px", md: "60px" },
+                color: "white",
+                border: "1px solid #063f5c",
+                borderRadius: 3,
                 display: "flex",
-                fontFamily: "monospace",
-                fontWeight: "bold",
-                textDecoration: "none",
-                textAlign: "center",
+                alignItems: "center",
+                justifyContent: "center",
+                backgroundColor: "#063f5c",
+                color: "white",
+                "&:hover": {
+                  cursor: "pointer",
+                },
               }}>
-              Visit Video
-            </Typography>
-          </Box>
+              <Typography
+                // variant="h4"
+                noWrap
+                component="a"
+                sx={{
+                  display: "flex",
+                  fontFamily: "monospace",
+                  fontWeight: "bold",
+                  textDecoration: "none",
+                  textAlign: "center",
+                  fontSize: { xs: "12px", md: "20px" },
+                }}>
+                Visit Video
+              </Typography>
+            </Box>
+          </Link>
         </Box>
 
         <Content

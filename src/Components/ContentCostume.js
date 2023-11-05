@@ -10,7 +10,7 @@ import CardCostume from "./CardCostume";
 
 export default function ContentCostume(props) {
   return (
-    <Box sx={{ marginTop: 10 }}>
+    <Box sx={{ marginTop: { xs: 3, md: 10 } }}>
       <ContentTitle {...props} />
       <CardCostume {...props} />
     </Box>

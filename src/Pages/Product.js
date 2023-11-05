@@ -81,16 +81,16 @@ export default function Video() {
             display: {
               display: "flex",
               justifyContent: "center",
-              marginBottom: 20,
+              marginBottom: { xs: 0, md: 20 },
             },
           }}>
           <Typography
-            variant="h1"
             noWrap
             sx={{
               fontFamily: "monospace",
               fontWeight: 700,
               color: "black",
+              fontSize: { xs: "24px", md: "32px" },
             }}>
             PRODUCT
           </Typography>

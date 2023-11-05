@@ -12,7 +12,7 @@ export default function ButtonPagination(props) {
         marginTop: "20px",
         backgroundColor: "#063f5c",
         color: "white",
-        height: 60,
+        height: { xs: "40px", md: "60px" },
         border: "1px solid #063f5c",
         borderRadius: "39px",
         display: "flex",
@@ -31,7 +31,7 @@ export default function ButtonPagination(props) {
         <CircularProgress sx={{ color: "white" }} />
       ) : (
         <Typography
-          variant="h4"
+          // variant="h4"
           noWrap
           component="a"
           sx={{
@@ -41,6 +41,7 @@ export default function ButtonPagination(props) {
             textDecoration: "none",
             textAlign: "center",
             color: "white",
+            fontSize: { xs: "12px", md: "20px" },
           }}>
           Tampilkan Lebih Banyak
         </Typography>

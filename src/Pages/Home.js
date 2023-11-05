@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { Container } from "@mui/material";
+import { Box, Container } from "@mui/material";
 
 import Layout from "../Components/Layout";
 import Banner from "../Components/Banner";
@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <div style={{ marginBottom: 60 }} className="background-image-all">
       <Layout redirectPage={redirectPage} />
-      <div style={{ marginTop: 60 }} />
+      <Box sx={{ marginTop: { xs: "70px", md: "70px" } }} />
       <Banner />
       <Container>
         <Content
@@ -67,14 +67,6 @@ export default function Home() {
           redirectPageByButton={redirectPageByButton}
           redirectUrl="/costume"
           labelName="costume"
-        />
-        <Content
-          contentTitle="Event"
-          data={EventData.slice(0, 4)}
-          redirectPage={redirectPage}
-          redirectPageByButton={redirectPageByButton}
-          redirectUrl="/event"
-          labelName="event"
         />
       </Container>
     </div>
