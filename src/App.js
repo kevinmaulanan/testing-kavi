@@ -33,6 +33,10 @@ function App() {
           rel="stylesheet"
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
         />
+        <meta
+          name="google-site-verification"
+          content="td_QCbD0cVQS_VJGu6Gw0OOHr_wlznmydYp0JdsPsnY"
+        />
       </MetaTags>
 
       <Routers />
