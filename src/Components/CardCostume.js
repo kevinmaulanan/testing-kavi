@@ -24,7 +24,12 @@ export default function CardCostume(props) {
               }>
               <CardMedia
                 component="img"
-                sx={{ width: 450, height: 250, objectPosition: "70% 5%" }}
+                sx={{
+                  width: 450,
+                  height: 250,
+                  objectPosition: "70% 5%",
+                  // justifyContent: "center",
+                }}
                 image={costume.image}
                 alt="Live from space album cover"
               />
@@ -36,6 +41,7 @@ export default function CardCostume(props) {
                   alignItems: "center",
                   justifyContent: "center",
                   marginLeft: { md: "-200px", sx: 0 },
+                  display: { xs: "none", md: "flex" },
                 }}>
                 <Typography
                   component="div"
