@@ -12,16 +12,39 @@ import Content from "../Components/Content";
 import { VideoData, ProductData } from "../DummyData/index";
 import { AddPageViewGA, AddActionGA } from "../Services/GA";
 
-export default function ContentVideoDetail(props) {
+import "../Components/css/image-galery.css";
+
+export default function ProductDetail(props) {
   const { id } = useParams();
   const navigate = useNavigate();
   const [data, setData] = useState({});
-  const [videoData, setVideoData] = useState([]);
+  const [productData, setProductData] = useState([]);
+
+  const setProductRecommendation = (findData) => {
+    let productDataFilter = ProductData.filter((v) => {
+      if (v.id == findData.id) return false;
+
+      if (Array.isArray(v.tags) && Array.isArray(findData.tags)) {
+        for (let i = 0; i < v.tags.length; i++) {
+          if (findData.tags.includes(v.tags[i])) {
+            return true;
+          }
+        }
+      }
+      return false;
+    });
+
+    if (productDataFilter.length == 0) {
+      productDataFilter = ProductData.slice(0, 6);
+    }
+
+    setProductData(productDataFilter);
+  };
 
   useEffect(() => {
     let pathname = window.location.pathname;
     AddPageViewGA(pathname, pathname);
-    let findData = _.find(VideoData, { id: parseInt(id) });
+    let findData = _.find(ProductData, { id: parseInt(id) });
     setData(findData);
     setProductRecommendation(findData);
   }, []);
@@ -29,7 +52,7 @@ export default function ContentVideoDetail(props) {
   useEffect(() => {
     let pathname = window.location.pathname;
     AddPageViewGA(pathname, pathname);
-    let findData = _.find(VideoData, { id: parseInt(id) });
+    let findData = _.find(ProductData, { id: parseInt(id) });
     setData(findData);
     setProductRecommendation(findData);
   }, [id]);
@@ -41,31 +64,11 @@ export default function ContentVideoDetail(props) {
 
   const redirectPageByButton = (name, page) => {
     AddActionGA(
-      "click_see_all_button_from_video_detail_page",
+      "click_see_all_button_from_product_detail_page",
       "Click See All Button - " + name,
       page
     );
     navigate(page);
-  };
-
-  const setProductRecommendation = (findData) => {
-    let videoDataFilter = VideoData.filter((v) => {
-      if (v.id == findData.id) return false;
-      if (Array.isArray(v.tags) && Array.isArray(findData.tags)) {
-        for (let i = 0; i < v.tags.length; i++) {
-          if (findData.tags.includes(v.tags[i])) {
-            return true;
-          }
-        }
-      }
-      return false;
-    });
-
-    if (videoDataFilter.length == 0) {
-      videoDataFilter = ProductData.slice(0, 6);
-    }
-
-    setVideoData(videoDataFilter);
   };
 
   return (
@@ -79,18 +82,19 @@ export default function ContentVideoDetail(props) {
             fontFamily: "monospace",
             fontWeight: 700,
             color: "black",
-            marginBottom: { xs: 1, md: 2 },
+            marginBottom: 2,
             textAlign: "start",
             marginTop: 3,
             fontSize: { xs: "12px", md: "20px" },
           }}>
-          {data.title}
+          {data.title || data.name}
         </Typography>
 
         <ImageGallery
           items={data.images || []}
           // thumbnailPosition="left"
           showFullscreenButton={true}
+          additionalClass="image-galery-test"
         />
 
         <Box
@@ -135,28 +139,28 @@ export default function ContentVideoDetail(props) {
                   textAlign: "center",
                   fontSize: { xs: "12px", md: "20px" },
                 }}>
-                Visit Video
+                Visit Product
               </Typography>
             </Box>
           </Link>
         </Box>
 
-        <Content
-          contentTitle="Video Yang Berkaitan"
-          data={videoData.slice(0, 4)}
-          redirectPage={redirectPage}
-          redirectPageByButton={redirectPageByButton}
-          redirectUrl="/video"
-          labelName="video"
-        />
-
         <ContentProduct
           contentTitle="Product Yang Berkaitan"
-          data={ProductData.slice(0, 6)}
+          data={productData.slice(0, 6)}
           redirectPage={redirectPage}
           redirectPageByButton={redirectPageByButton}
           redirectUrl="/product"
           labelName="product"
+        />
+
+        <Content
+          contentTitle="Video Yang Berkaitan"
+          data={VideoData.slice(0, 4)}
+          redirectPage={redirectPage}
+          redirectPageByButton={redirectPageByButton}
+          redirectUrl="/video"
+          labelName="video"
         />
       </Container>
     </div>

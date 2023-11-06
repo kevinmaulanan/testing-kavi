@@ -54,7 +54,7 @@ export default function Home() {
         />
         <ContentProduct
           contentTitle="Product"
-          data={ProductData.slice(0, 4)}
+          data={ProductData.slice(0, 6)}
           redirectPage={redirectPage}
           redirectPageByButton={redirectPageByButton}
           redirectUrl="/product"

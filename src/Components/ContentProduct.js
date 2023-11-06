@@ -6,9 +6,9 @@ import CardProductItem from "./CardProduct";
 
 export default function Content(props) {
   return (
-    <Box sx={{ marginTop: { xs: 3, md: 10 } }}>
+    <Box sx={{ marginTop: { xs: 3, md: 2 } }}>
       <ContentTitle {...props} />
-      <CardProductItem data={props.data} />
+      <CardProductItem {...props} />
     </Box>
   );
 }

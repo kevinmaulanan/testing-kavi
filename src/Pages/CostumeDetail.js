@@ -32,7 +32,8 @@ export default function CostumeDetail() {
       }
       return false;
     });
-    if (videoDataFilter.length < 4) {
+    if (videoDataFilter.length == 0) {
+      videoDataFilter = VideoData.slice(0, 4);
     }
 
     setVideoData(videoDataFilter);
@@ -100,7 +101,7 @@ export default function CostumeDetail() {
 
         <ContentProduct
           contentTitle="Product Yang Berkaitan"
-          data={ProductData.slice(0, 4)}
+          data={ProductData.slice(0, 6)}
           redirectPage={redirectPage}
           redirectPageByButton={redirectPageByButton}
           redirectUrl="/product"

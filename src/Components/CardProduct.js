@@ -3,41 +3,67 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Grid, Box } from "@mui/material";
+import { Grid, CardActionArea } from "@mui/material";
 
 export default function CardProductItem(props) {
   return (
-    <Grid container rowSpacing={2} columnSpacing={{ xs: 4, sm: 4, md: 4 }}>
+    <Grid
+      container
+      rowSpacing={{ xs: 1, sm: 1, md: 2 }}
+      columnSpacing={{ xs: 0.5, sm: 1, md: 1 }}>
       {props.data &&
         props.data.map((item) => (
-          <Grid item xs={12} md={3} key={item.id}>
-            <Card variant="outlined" sx={{ display: "flex" }}>
-              <Box sx={{ display: "flex", flexDirection: "row" }}>
+          <Grid item xs={4} md={2} key={item.id}>
+            <Card
+              variant="outlined"
+              sx={{
+                backgroundColor: "white",
+                maxWidth: 345,
+                "&:hover": {
+                  borderColor: `green`,
+                  border: 1,
+                },
+              }}
+              onClick={() =>
+                props.redirectPage(props.redirectUrl + "/" + item.id)
+              }>
+              <CardActionArea>
                 <CardMedia
                   component="img"
-                  sx={{ width: 150, height: 100 }}
                   image={item.image}
-                  alt="Live from space album cover"
+                  alt="green iguana"
+                  sx={{
+                    height: { xs: "100px", md: "160px" },
+                    transition: "0.4s ease;",
+                    "&:hover": {
+                      transform: "scale(1.2)",
+                    },
+                  }}
                 />
-                <CardContent sx={{ flex: "1 0 auto" }}>
+                <CardContent>
                   <Typography
-                    component="div"
-                    variant="h5"
+                    color="text.secondary"
+                    align="left"
                     sx={{
-                      fontFamily: "monospace",
-                      fontWeight: 700,
-                      color: "black",
-                    }}>
-                    {item.name}
+                      fontWeight: 500,
+                      fontSize: { xs: "11px", md: "14px" },
+                    }}
+                    className="content-body-text">
+                    {item.description || item.title}
                   </Typography>
                   <Typography
-                    variant="subtitle1"
                     color="text.secondary"
-                    component="div">
-                    {item.qty} PCS
+                    align="justify"
+                    sx={{
+                      fontWeight: 500,
+                      fontSize: { xs: "11px", md: "16px", marginTop: "5px" },
+                      color: "#ff7dc2",
+                    }}
+                    className="content-body-text">
+                    Rp. 120.000
                   </Typography>
                 </CardContent>
-              </Box>
+              </CardActionArea>
             </Card>
           </Grid>
         ))}

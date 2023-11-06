@@ -579,266 +579,299 @@ exports.VideoData = [
   },
 ];
 
-exports.EventData = [
-  {
-    id: 1,
-    title: "Video Baru Zeta",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
-  },
-  {
-    id: 2,
-    title: "Video Baru Zeta",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
-  },
-  {
-    id: 3,
-    title: "Video Baru Zeta",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
-  },
-  {
-    id: 4,
-    title: "Video Baru Zeta",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
-  },
-  {
-    id: 5,
-    title: "Video Baru Zeta",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-  },
-  {
-    id: 6,
-    title: "Video Baru Zeta",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-  },
-  {
-    id: 7,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-  },
-  {
-    id: 8,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-  },
-  {
-    id: 9,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-  },
-  {
-    id: 10,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-  },
-  {
-    id: 11,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-  },
-  {
-    id: 12,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-  },
-  {
-    id: 13,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-  },
-  {
-    id: 14,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-  },
-  {
-    id: 15,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-  },
-  {
-    id: 16,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-  },
-  {
-    id: 17,
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-  },
-];
-
 exports.ProductData = [
   {
     id: 1,
-    name: "CARD",
+    name: "[Wetrose] Hololive Vtuber Vestia Zeta Kimono Kostum Cosplay Wig Vestia Zeta Wanita",
     description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
+      "[Wetrose] Hololive Vtuber Vestia Zeta Kimono Kostum Cosplay Wig Vestia Zeta Wanita",
+    image: `https://down-id.img.susercontent.com/file/id-11134207-7qul0-lhlm19qisen28d`,
+    images: [
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134207-7qul0-lhlm19qisen28d`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134207-7qul0-lhlm19qisen28d`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/sg-11134201-7qvd4-lgdann4ib5bp1c`,
+        thumbnail: `https://down-id.img.susercontent.com/file/sg-11134201-7qvd4-lgdann4ib5bp1c`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/sg-11134201-7qvcq-lgdanmv2oyiocf`,
+        thumbnail: `https://down-id.img.susercontent.com/file/sg-11134201-7qvcq-lgdanmv2oyiocf`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134207-7quky-lhlm19qitt7i96`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134207-7quky-lhlm19qitt7i96`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134207-7qul0-lhlm19qiv7ry96`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134207-7qul0-lhlm19qiv7ry96`,
+      },
+    ],
+    price: 300000,
+    redirectUrl:
+      "https://shopee.co.id/【Wetrose】-Hololive-Vtuber-Vestia-Zeta-Kimono-Kostum-Cosplay-Wig-Vestia-Zeta-Wanita-i.454853670.23941422101?sp_atk=98db38ba-3faf-41bc-ad8f-66043b7d1ff5&xptdk=98db38ba-3faf-41bc-ad8f-66043b7d1ff5",
+    tags: ["COSPLAY"],
   },
   {
     id: 2,
-    name: "CARD",
+    name: "[Wetrose] Hololive ID Vtuber Vestia Zeta Nusantara 2023 New Outfit Costume Cosplay Set Kostum Wanita Lucu",
     description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
+      "[Wetrose] Hololive ID Vtuber Vestia Zeta Nusantara 2023 New Outfit Costume Cosplay Set Kostum Wanita Lucu",
+    image: `https://down-id.img.susercontent.com/file/sg-11134201-7rbmd-llne8t3chvy29c`,
+    images: [
+      {
+        original: `https://down-id.img.susercontent.com/file/sg-11134201-7rbmd-llne8t3chvy29c`,
+        thumbnail: `https://down-id.img.susercontent.com/file/sg-11134201-7rbmd-llne8t3chvy29c`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/sg-11134201-7rbn7-llne8tfk00sad5`,
+        thumbnail: `https://down-id.img.susercontent.com/file/sg-11134201-7rbn7-llne8tfk00sad5`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/sg-11134201-7rbmx-llop8q5xhgkj80`,
+        thumbnail: `https://down-id.img.susercontent.com/file/sg-11134201-7rbmx-llop8q5xhgkj80`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/sg-11134201-7rbmi-llne8tw7bniyd5`,
+        thumbnail: `https://down-id.img.susercontent.com/file/sg-11134201-7rbmi-llne8tw7bniyd5`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134207-7r98s-ln45nswwuqvjde`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134207-7r98s-ln45nswwuqvjde`,
+      },
+    ],
+    price: 250000,
+    redirectUrl:
+      "https://shopee.co.id/【Wetrose】Hololive-ID-Vtuber-Vestia-Zeta-Nusantara-2023-New-Outfit-Costume-Cosplay-Set-Kostum-Wanita-Lucu-i.454853670.19885418401?sp_atk=8436eabf-0b98-4197-bb7a-ebc174b75feb&xptdk=8436eabf-0b98-4197-bb7a-ebc174b75feb",
+    tags: ["COSPLAY"],
   },
   {
     id: 3,
-    name: "CARD",
+    name: "Standee Figure Akrilik Vestia Zeta Hololive / Standing Action figure Acrylic Vestia Zeta Hololive",
     description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
+      "Standee Figure Akrilik Vestia Zeta Hololive / Standing Action figure Acrylic Vestia Zeta Hololive",
+    image: `https://down-id.img.susercontent.com/file/id-11134201-7r98o-lkorl2bizhnvea`,
+    images: [
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134201-7r98o-lkorl2bizhnvea`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134201-7r98o-lkorl2bizhnvea`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134201-7r98o-lkorl0ktj9clcd`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134201-7r98o-lkorl0ktj9clcd`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134201-7r98o-lkorl2euumfp8a`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134201-7r98o-lkorl2euumfp8a`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134201-7r98o-lkorl2f4u7u7f2`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134201-7r98o-lkorl2f4u7u7f2`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134201-7r98o-lkorl0ldifmof6`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134201-7r98o-lkorl0ldifmof6`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134201-7r98o-lkorl2eavfhn8b`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134201-7r98o-lkorl2eavfhn8b`,
+      },
+    ],
+    price: 15000,
+    redirectUrl:
+      "https://shopee.co.id/【Wetrose】Hololive-ID-Vtuber-Vestia-Zeta-Nusantara-2023-New-Outfit-Costume-Cosplay-Set-Kostum-Wanita-Lucu-i.454853670.19885418401?sp_atk=8436eabf-0b98-4197-bb7a-ebc174b75feb&xptdk=8436eabf-0b98-4197-bb7a-ebc174b75feb",
+    tags: ["FIGURE"],
   },
   {
     id: 4,
-    name: "CARD",
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
+    name: "boneka plushie mini anime hololive vestia zeta",
+    description: "boneka plushie mini anime hololive vestia zeta",
+    image: `https://down-id.img.susercontent.com/file/id-11134207-7qul0-lir7j4mcy83f9f`,
+    images: [
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134207-7qul0-lir7j4mcy83f9f`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134207-7qul0-lir7j4mcy83f9f`,
+      },
+    ],
+    price: 22500,
+    redirectUrl:
+      "https://shopee.co.id/boneka-plushie-mini-anime-hololive-vestia-zeta-i.6445672.22572576906?sp_atk=4de689bb-e0cd-4f97-a8a7-119560f8143e&xptdk=4de689bb-e0cd-4f97-a8a7-119560f8143e",
+    tags: ["BONEKA"],
   },
   {
     id: 5,
-    name: "CARD",
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
+    name: "gelang anime gantungan akrilik HOLOLIVE Vestia Zeta",
+    description: "gelang anime gantungan akrilik HOLOLIVE Vestia Zeta",
+    image: `https://down-id.img.susercontent.com/file/id-11134207-7qul6-liqxvykcdqjd0b`,
+    images: [
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134207-7qul6-liqxvykcdqjd0b`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134207-7qul6-liqxvykcdqjd0b`,
+      },
+    ],
+    price: 150000,
+    redirectUrl:
+      "https://shopee.co.id/gelang-anime-gantungan-akrilik-HOLOLIVE-Vestia-Zeta-i.6445672.23672549053?sp_atk=4ad1659b-7c1b-46ed-81c7-58b86b2a837c&xptdk=4ad1659b-7c1b-46ed-81c7-58b86b2a837c",
+    tags: ["ACC"],
   },
   {
     id: 6,
-    name: "CARD",
+    name: "note book hololive viesta zeta / notebook hololive viesta zeta",
     description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
+      "note book hololive viesta zeta / notebook hololive viesta zeta",
+    image: `https://down-id.img.susercontent.com/file/id-11134207-7qukx-lg9f1r4cjm3yca`,
+    images: [
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134207-7qukx-lg9f1r4cjm3yca`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134207-7qukx-lg9f1r4cjm3yca`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134207-7qul2-lg9f1r4cl0oe64`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134207-7qul2-lg9f1r4cl0oe64`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134207-7qul8-lg9f1r4cmf8uec`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134207-7qul8-lg9f1r4cmf8uec`,
+      },
+    ],
+    price: 5000,
+    redirectUrl:
+      "https://shopee.co.id/note-book-hololive-viesta-zeta-notebook-hololive-viesta-zeta-i.6445672.22441174719?sp_atk=452cc1bf-f883-47c4-8c04-3d61801f4908&xptdk=452cc1bf-f883-47c4-8c04-3d61801f4908",
+    tags: ["PHOTO CARD"],
   },
   {
     id: 7,
-    name: "CARD",
+    name: "TOTE BAG VESTIA ZETA BAZO MASKOT - TOTEBAG ANIME & GAME DESIGN VTUBER HOLOLIVE ZETA BAZO",
     description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
+      "TOTE BAG VESTIA ZETA BAZO MASKOT - TOTEBAG ANIME & GAME DESIGN VTUBER HOLOLIVE ZETA BAZO",
+    image: `https://down-id.img.susercontent.com/file/id-11134207-7qukw-lh28mf2t1h7je9`,
+    images: [
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134207-7qukw-lh28mf2t1h7je9`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134207-7qukw-lh28mf2t1h7je9`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134207-7qul8-lh28mf2t02n341`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134207-7qul8-lh28mf2t02n341`,
+      },
+    ],
+    price: 33000,
+    redirectUrl:
+      "https://shopee.co.id/TOTE-BAG-VESTIA-ZETA-BAZO-MASKOT-TOTEBAG-ANIME-GAME-DESIGN-VTUBER-HOLOLIVE-ZETA-BAZO-i.358789073.21179991111?sp_atk=7a310713-401d-4690-bd77-eda4eb071544&xptdk=7a310713-401d-4690-bd77-eda4eb071544",
+    tags: ["TOTE BAG"],
   },
   {
     id: 8,
-    name: "CARD",
+    name: "Photocard Vestia Zeta - Photocard Hololive UNOFFICIAL FANMERCH S2",
     description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
+      "Photocard Vestia Zeta - Photocard Hololive UNOFFICIAL FANMERCH S2",
+    image: `https://down-id.img.susercontent.com/file/id-11134207-7r990-ll7a6wst1v3w21`,
+    images: [
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134207-7r990-ll7a6wst1v3w21`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134207-7r990-ll7a6wst1v3w21`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134207-7qul4-li2i6hwpldji64`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134207-7qul4-li2i6hwpldji64`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134207-7r98w-ll7a6wst1ve9dd`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134207-7r98w-ll7a6wst1ve9dd`,
+      },
+    ],
+    price: 5000,
+    redirectUrl:
+      "https://shopee.co.id/Photocard-Vestia-Zeta-Photocard-Hololive-UNOFFICIAL-FANMERCH-S2-i.208662666.15599018130?sp_atk=8d153c0d-9f83-4087-a51d-eacda0669006&xptdk=8d153c0d-9f83-4087-a51d-eacda0669006",
+    tags: ["PHOTO CARD"],
   },
   {
     id: 9,
-    name: "CARD",
+    name: "Gantungan Hp kobo kanaeru/vestia zeta/kaela kovalskia by dollyink.official/gantungan kunci untuk aksesoris hanphone/strap phone ",
     description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
+      "Gantungan Hp kobo kanaeru/vestia zeta/kaela kovalskia by dollyink.official/gantungan kunci untuk aksesoris hanphone/strap phone ",
+    image: `https://down-id.img.susercontent.com/file/id-11134207-7r98q-llkj07hd94hz45`,
+    images: [
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134207-7r98q-llkj07hd94hz45`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134207-7r98q-llkj07hd94hz45`,
+      },
+    ],
+    price: 25000,
+    redirectUrl:
+      "https://shopee.co.id/Gantungan-Hp-kobo-kanaeru-vestia-zeta-kaela-kovalskia-by-dollyink.official-gantungan-kunci-untuk-aksesoris-hanphone-strap-phone-beads-charm-phone-charm-i.376451306.23680024508?sp_atk=00bc605a-cdb5-47ff-8cd7-883260996d40&xptdk=00bc605a-cdb5-47ff-8cd7-883260996d40",
+    tags: ["KEY CHAIN"],
   },
   {
     id: 10,
-    name: "CARD",
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
+    name: "gantungan kunci hololive VESTIA ZETA",
+    description: "gantungan kunci hololive VESTIA ZETA",
+    image: `https://down-id.img.susercontent.com/file/id-11134207-7qukw-lf0s9rmemq0174`,
+    images: [
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134207-7qukw-lf0s9rmemq0174`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134207-7qukw-lf0s9rmemq0174`,
+      },
+    ],
+    price: 10000,
+    redirectUrl:
+      "https://shopee.co.id/gantungan-kunci-hololive-VESTIA-ZETA-i.6445672.20777499970?sp_atk=ab45beb5-2ec1-4e7c-8e76-a62ea02cd3cc&xptdk=ab45beb5-2ec1-4e7c-8e76-a62ea02cd3cc",
+    tags: ["KEY CHAIN"],
   },
   {
     id: 11,
-    name: "CARD",
+    name: "Keychain Hololive Indonesia Vestia Zeta New Costume Kimono | KyraMerch Anime Fanmerch Dealer",
     description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
+      "Keychain Hololive Indonesia Vestia Zeta New Costume Kimono | KyraMerch Anime Fanmerch Dealer",
+    image: `https://down-id.img.susercontent.com/file/id-11134201-7qukx-lia4dq231crx20`,
+    images: [
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134201-7qukx-lia4dq231crx20`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134201-7qukx-lia4dq231crx20`,
+      },
+    ],
+    price: 20000,
+    redirectUrl:
+      "https://shopee.co.id/Keychain-Hololive-Indonesia-Vestia-Zeta-New-Costume-Kimono-KyraMerch-Anime-Fanmerch-Dealer-i.873740918.23871611302?sp_atk=9107a3d6-e629-4698-91eb-1d86264207f1&xptdk=9107a3d6-e629-4698-91eb-1d86264207f1",
+    tags: ["KEY CHAIN"],
   },
   {
     id: 12,
-    name: "CARD",
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
+    name: "Lanyard Zeta Lewd Anime Manga VTuber Gantungan HP",
+    description: "Lanyard Zeta Lewd Anime Manga VTuber Gantungan HP",
+    image: `https://down-id.img.susercontent.com/file/id-11134207-7qul1-ljjq6fc6mmhzc3`,
+    images: [
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134207-7qul1-ljjq6fc6mmhzc3`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134207-7qul1-ljjq6fc6mmhzc3`,
+      },
+      {
+        original: `https://down-id.img.susercontent.com/file/id-11134207-7qul8-ljjq6fc6o12f18`,
+        thumbnail: `https://down-id.img.susercontent.com/file/id-11134207-7qul8-ljjq6fc6o12f18`,
+      },
+    ],
+    price: 45000,
+    redirectUrl:
+      "https://shopee.co.id/Lanyard-Zeta-Lewd-Anime-Manga-VTuber-Gantungan-HP-i.5941475.22374665013?sp_atk=dd8e96f4-e9c8-4acc-a43e-dd84a5cc01b4&xptdk=dd8e96f4-e9c8-4acc-a43e-dd84a5cc01b4",
+    tags: ["LANYARD"],
   },
   {
     id: 13,
-    name: "CARD",
+    name: "Tote bag infinite anime vtuber VESTIA ZETA - HOLOLIVE ID 100% canvas",
     description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
-  },
-  {
-    id: 14,
-    name: "CARD",
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
-  },
-  {
-    id: 15,
-    name: "CARD",
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
-  },
-  {
-    id: 16,
-    name: "CARD",
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
-  },
-  {
-    id: 17,
-    name: "CARD",
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-    price: 1000000,
-    qty: 20,
+      "Tote bag infinite anime vtuber VESTIA ZETA - HOLOLIVE ID 100% canvas",
+    image: `https://down-id.img.susercontent.com/file/95b869e11592efb2549660cbf7cb1b06`,
+    images: [
+      {
+        original: `https://down-id.img.susercontent.com/file/95b869e11592efb2549660cbf7cb1b06`,
+        thumbnail: `https://down-id.img.susercontent.com/file/95b869e11592efb2549660cbf7cb1b06`,
+      },
+    ],
+    price: 49800,
+    redirectUrl:
+      "https://shopee.co.id/Tote-bag-infinite-anime-vtuber-VESTIA-ZETA-HOLOLIVE-ID-100-canvas-i.289307561.21347247521?sp_atk=054dc1b6-75b7-448f-baee-93b39a7d8d22&xptdk=054dc1b6-75b7-448f-baee-93b39a7d8d22",
+    tags: ["TOTE BAG"],
   },
 ];
 
@@ -971,30 +1004,30 @@ exports.ProductTagData = [
   },
   {
     id: 2,
-    name: "3D",
+    name: "COSPLAY",
   },
   {
     id: 3,
-    name: "PON",
+    name: "KEY CHAIN",
   },
   {
     id: 4,
-    name: "HOLOH3RO",
+    name: "FIGURE",
   },
   {
     id: 5,
-    name: "DEFAULT COSTUME",
+    name: "BONEKA",
   },
   {
     id: 6,
-    name: "KIMONO COSTUME",
+    name: "PHOTO CARD",
   },
   {
     id: 7,
-    name: "GELORA COSTUME",
+    name: "TOTE BAG",
   },
   {
     id: 8,
-    name: "HOLO ID COLLAB",
+    name: "LANYARD",
   },
 ];

@@ -7,7 +7,10 @@ import { CardActionArea, Grid } from "@mui/material";
 
 export default function CardItem(props) {
   return (
-    <Grid container rowSpacing={2} columnSpacing={{ xs: 2, sm: 2, md: 4 }}>
+    <Grid
+      container
+      rowSpacing={{ xs: 1, sm: 1, md: 2 }}
+      columnSpacing={{ xs: 1, sm: 1, md: 1 }}>
       {props.data &&
         props.data.map((item) => (
           <Grid item xs={6} md={3} key={item.id}>
@@ -16,6 +19,7 @@ export default function CardItem(props) {
               sx={{
                 backgroundColor: "white",
                 maxWidth: 345,
+                height: "100%",
                 "&:hover": {
                   borderColor: `green`,
                   border: 1,
@@ -40,10 +44,10 @@ export default function CardItem(props) {
                 <CardContent>
                   <Typography
                     color="text.secondary"
-                    align="justify"
+                    align="left"
                     sx={{
                       fontWeight: 500,
-                      fontSize: { xs: "11px", md: "16px" },
+                      fontSize: { xs: "11px", md: "14px" },
                     }}
                     className="content-body-text">
                     {item.description || item.title}

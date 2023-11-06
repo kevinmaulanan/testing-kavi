@@ -1,7 +1,14 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-import { Typography, Box, Link, Container } from "@mui/material";
+import {
+  Typography,
+  Box,
+  Link,
+  Container,
+  Backdrop,
+  CircularProgress,
+} from "@mui/material";
 
 import Layout from "../Components/Layout";
 import CardProductItem from "../Components/CardProduct";
@@ -20,21 +27,49 @@ import { AddPageViewGA, AddActionGA, AddEventGA } from "../Services/GA";
 
 export default function Video() {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const [tagActiveId, setTagActiveId] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
+  const [isLoadingContent, setIsLoadingContent] = useState(false);
   const [isHideButton, setIsHideButton] = useState(false);
   const [limit, setLimit] = useState(12);
   const [page, setPage] = useState(1);
   const [data, setData] = useState([]);
+  const [tagName, setTagName] = useState("ALL");
 
   useEffect(() => {
     let pathname = window.location.pathname;
     AddPageViewGA(pathname, pathname);
-    setData(ProductData.slice(0, limit));
+    let tag = searchParams.get("tag");
+    console.log(tag, "tag");
+    if (tag) {
+      let findTag = ProductTagData.find(
+        (v) => v.name === tag.split("_").join(" ") || v.name === tag
+      );
+
+      console.log(findTag, "findTag");
+      if (findTag) {
+        setTagActiveId(findTag.id);
+        setTagName(findTag.name);
+        return;
+      }
+    }
+    return setData(ProductData.slice(0, limit));
   }, []);
+
+  useEffect(() => {
+    setData(getFilterData());
+    setIsLoading(false);
+    setIsLoadingContent(false);
+  }, [tagName, page]);
 
   const redirectPage = (page) => {
     AddActionGA("click", "navbar", page);
+    navigate(page);
+  };
+
+  const redirectPageDetail = (page) => {
+    AddActionGA("click", "item_detail", page);
     navigate(page);
   };
 
@@ -47,8 +82,38 @@ export default function Video() {
     navigate(page);
   };
 
+  const getFilterData = () => {
+    let filterData = ProductData;
+    if (tagName != "ALL") {
+      filterData = ProductData.filter((v) => {
+        if (Array.isArray(v.tags)) {
+          if (v.tags.includes(tagName)) {
+            return true;
+          }
+        }
+        return false;
+      });
+    }
+
+    if (filterData.length === filterData.slice(0, limit * page).length) {
+      setIsHideButton(true);
+    } else {
+      setIsHideButton(false);
+    }
+
+    filterData = filterData.slice(0, limit * page);
+    return filterData;
+  };
+
   const onClickSetTagActive = (tag) => {
     AddEventGA("click", "product_tag", tag.name);
+
+    setIsLoadingContent(true);
+    setTimeout(function () {
+      setPage(1);
+      setTagName(tag.name);
+    }, 1000);
+
     setTagActiveId(tag.id);
   };
 
@@ -56,18 +121,12 @@ export default function Video() {
     AddEventGA(
       "click",
       "button_load_product",
-      "Button Load Product - Page " + page
+      "Button Load Product - Page " + page + 1
     );
+
     setIsLoading(true);
     setTimeout(function () {
       setPage(page + 1);
-      setData(ProductData.slice(0, limit * (page + 1)));
-      if (
-        ProductData.length === ProductData.slice(0, limit * (page + 1)).length
-      ) {
-        setIsHideButton(true);
-      }
-      setIsLoading(false);
     }, 1000);
   };
 
@@ -75,6 +134,11 @@ export default function Video() {
     <div style={{ marginBottom: 40 }} className="background-image-all">
       <Layout redirectPage={redirectPage} />
       <Container>
+        <Backdrop
+          sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
+          open={isLoadingContent}>
+          <CircularProgress color="inherit" />
+        </Backdrop>
         <div style={{ marginTop: 100 }} />
         <Box
           sx={{
@@ -102,7 +166,11 @@ export default function Video() {
           onClickSetTagActive={onClickSetTagActive}
         />
 
-        <CardProductItem data={data} />
+        <CardProductItem
+          data={data}
+          redirectPage={redirectPageDetail}
+          redirectUrl="/product"
+        />
         {isHideButton === false && (
           <ButtonPagination isLoading={isLoading} loadItem={loadItem} />
         )}

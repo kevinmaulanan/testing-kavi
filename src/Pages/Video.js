@@ -41,7 +41,7 @@ export default function Video() {
     let tag = searchParams.get("tag");
     if (tag) {
       let findTag = VideoTagData.find(
-        (v) => v.name === tag.split("_").join(" ")
+        (v) => v.name === tag.split("_").join(" ") || v.name === tag
       );
       if (findTag) {
         setTagActiveId(findTag.id);
