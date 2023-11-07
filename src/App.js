@@ -16,11 +16,11 @@ function App() {
     <div className="App">
       <MetaTags>
         <meta charSet="UTF-8" />
-        <meta name="description" content="Vestia Zeta and Kavi" />
+        {/* <meta name="description" content="Vestia Zeta and Kavi" />
         <meta
           name="keywords"
           content="Vestia Zeta Kavi, Kavi Vestia Zeta, Testing Kavi Vestia Zeta, Kavi Testing Vestia Zeta, Vestia Zeta Testing Kavi"
-        />
+        /> */}
         <meta name="author" content="Kavi" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
