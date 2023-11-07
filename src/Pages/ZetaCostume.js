@@ -5,6 +5,7 @@ import { Typography, Box, Container } from "@mui/material";
 import Layout from "../Components/Layout";
 import ContentProduct from "../Components/ContentProduct";
 import Content from "../Components/Content";
+import Footer from "../Components/Footer";
 
 import { VideoData, ProductData, CostumeData } from "../DummyData/index";
 import CardCostume from "../Components/CardCostume";
@@ -23,6 +24,11 @@ export default function Costume() {
     navigate(page);
   };
 
+  const redirectPageFooter = (page) => {
+    AddActionGA("click", "footer", page);
+    navigate(page);
+  };
+
   const redirectPageDetail = (page) => {
     AddActionGA("click", "item_detail", page);
     navigate(page);
@@ -38,7 +44,7 @@ export default function Costume() {
   };
 
   return (
-    <div style={{ marginBottom: 40 }} className="background-image-all">
+    <div className="background-image-all">
       <Layout redirectPage={redirectPage} />
       <Container>
         <div style={{ marginTop: 100 }} />
@@ -85,6 +91,9 @@ export default function Costume() {
           labelName="product"
         />
       </Container>
+
+      <Box style={{ marginBottom: 60 }}></Box>
+      <Footer redirectPage={redirectPageFooter} />
     </div>
   );
 }

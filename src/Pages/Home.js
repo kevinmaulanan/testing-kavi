@@ -6,6 +6,7 @@ import Banner from "../Components/Banner";
 import Content from "../Components/Content";
 import ContentProduct from "../Components/ContentProduct";
 import ContentCostume from "../Components/ContentCostume";
+import Footer from "../Components/Footer";
 
 import {
   ProductData,
@@ -29,6 +30,11 @@ export default function Home() {
     navigate(page);
   };
 
+  const redirectPageFooter = (page) => {
+    AddActionGA("click", "footer", page);
+    navigate(page);
+  };
+
   const redirectPageByButton = (name, page) => {
     AddActionGA(
       "click_see_all_button_from_home_page",
@@ -39,7 +45,7 @@ export default function Home() {
   };
 
   return (
-    <div style={{ marginBottom: 60 }} className="background-image-all">
+    <div className="background-image-all">
       <Layout redirectPage={redirectPage} />
       <Box sx={{ marginTop: { xs: "70px", md: "70px" } }} />
       <Banner />
@@ -69,6 +75,8 @@ export default function Home() {
           labelName="costume"
         />
       </Container>
+      <Box style={{ marginBottom: 60 }}></Box>
+      <Footer redirectPage={redirectPageFooter} />
     </div>
   );
 }

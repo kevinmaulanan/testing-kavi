@@ -14,6 +14,7 @@ import TagItem from "../Components/Tag";
 import ButtonPagination from "../Components/ButtonPagination";
 import ContentProduct from "../Components/ContentProduct";
 import ContentCostume from "../Components/ContentCostume";
+import Footer from "../Components/Footer";
 
 import {
   VideoData,
@@ -60,6 +61,11 @@ export default function Video() {
 
   const redirectPage = (page) => {
     AddActionGA("click", "navbar", page);
+    navigate(page);
+  };
+
+  const redirectPageFooter = (page) => {
+    AddActionGA("click", "footer", page);
     navigate(page);
   };
 
@@ -126,7 +132,7 @@ export default function Video() {
   };
 
   return (
-    <div style={{ marginBottom: 40 }} className="background-image-all">
+    <div className="background-image-all">
       <Layout redirectPage={redirectPage} />
       <Container>
         <Backdrop
@@ -188,6 +194,9 @@ export default function Video() {
           labelName="costume"
         />
       </Container>
+
+      <Box style={{ marginBottom: 60 }}></Box>
+      <Footer redirectPage={redirectPageFooter} />
     </div>
   );
 }
