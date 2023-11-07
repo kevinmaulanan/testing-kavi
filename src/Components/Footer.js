@@ -16,9 +16,9 @@ const sosmed = [
   { name: "Instagram", redirectUrl: "https://www.instagram.com/vestiazeta/" },
   {
     name: "Youtube",
-    tag: "https://www.youtube.com/channel/UCTvHWSfBZgtxE4sILOaurIQ",
+    redirectUrl: "https://www.youtube.com/channel/UCTvHWSfBZgtxE4sILOaurIQ",
   },
-  { name: "Tiktok", tag: "https://www.tiktok.com/@vestiazeta" },
+  { name: "Tiktok", redirectUrl: "https://www.tiktok.com/@vestiazeta" },
 ];
 
 export default function Footer(props) {
