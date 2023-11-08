@@ -255,327 +255,165 @@ exports.VideoData = [
   },
   {
     id: 6,
-    title: "Video Baru Zeta",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    title: "Kerusuhan Zeta, Kobo, & Kaela Karaoke Bareng",
+    image: `https://i.ytimg.com/vi/iCbvGXoXKFw/hq2.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCc5pKFWUFvjaEtIcvg287DfqGMdQ`,
     images: [
       {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        original: `https://i.ytimg.com/vi/iCbvGXoXKFw/hq2.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCc5pKFWUFvjaEtIcvg287DfqGMdQ`,
+        thumbnail: `https://i.ytimg.com/vi/iCbvGXoXKFw/hq2.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCc5pKFWUFvjaEtIcvg287DfqGMdQ`,
       },
     ],
+    redirectUrl: "https://www.youtube.com/watch?v=iCbvGXoXKFw",
+    tags: ["3D", "HOLO ID COLLAB", "HOLOH3RO"],
   },
   {
     id: 7,
-    title: "Video Baru Zeta",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    title: "Zeta Kept Dodging All The Jumpscares 【Hololive / Eng Sub",
+    image: `https://i.ytimg.com/vi/ts4-o4Bii4Q/hq2.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDTGaUj8kS7gs5secUni8DQYf3eGg`,
     images: [
       {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        original: `https://i.ytimg.com/vi/ts4-o4Bii4Q/hq2.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDTGaUj8kS7gs5secUni8DQYf3eGg`,
+        thumbnail: `https://i.ytimg.com/vi/ts4-o4Bii4Q/hq2.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDTGaUj8kS7gs5secUni8DQYf3eGg`,
       },
     ],
+    redirectUrl: "https://www.youtube.com/watch?v=iCbvGXoXKFw",
+    tags: ["DEFAULT COSTUME"],
   },
   {
     id: 8,
-    title: "Video Baru Zeta",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    title:
+      "Kobo dan Kaela yang niatnya mau ngibulin Zeta, tapi Zeta nya malah PON [Holoh3ro Clip]",
+    image: `https://i.ytimg.com/vi/qXsErk-yu8s/hq2.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAALQWMeox36C07Qvq1zawRF8nqrg`,
     images: [
       {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        original: `https://i.ytimg.com/vi/qXsErk-yu8s/hq2.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAALQWMeox36C07Qvq1zawRF8nqrg`,
+        thumbnail: `https://i.ytimg.com/vi/qXsErk-yu8s/hq2.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAALQWMeox36C07Qvq1zawRF8nqrg`,
       },
     ],
+    redirectUrl: "https://www.youtube.com/watch?v=qXsErk-yu8s&t=112s",
+    tags: ["KIMONO COSTUME", "HOLO ID COLLAB", "HOLOH3RO", "PON"],
   },
   {
     id: 9,
-    title: "Video Baru Zeta",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    title: "[Anime] Manual Membuat Manual Secara Manual",
+    image: `https://i.ytimg.com/vi/yJOSI6d783Y/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAdQAq8sCvV21IlGGWWyq182lGtHA`,
     images: [
       {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        original: `https://i.ytimg.com/vi/yJOSI6d783Y/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAdQAq8sCvV21IlGGWWyq182lGtHA`,
+        thumbnail: `https://i.ytimg.com/vi/yJOSI6d783Y/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAdQAq8sCvV21IlGGWWyq182lGtHA`,
       },
     ],
+    redirectUrl: "https://www.youtube.com/watch?v=iCbvGXoXKFw",
+    tags: ["DEFAULT COSTUME", "3D"],
   },
   {
     id: 10,
-    title: "Video Baru Zeta",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    title: "Zeta yang salah 3x berturut-turut - kobo kanaeru [clip]",
+    image: `https://i.ytimg.com/vi/QqLOL1eeTP4/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDQdJ0crZbM2pwa0G8MftdRwCzs0Q`,
     images: [
       {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        original: `https://i.ytimg.com/vi/QqLOL1eeTP4/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDQdJ0crZbM2pwa0G8MftdRwCzs0Q`,
+        thumbnail: `https://i.ytimg.com/vi/QqLOL1eeTP4/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDQdJ0crZbM2pwa0G8MftdRwCzs0Q`,
       },
     ],
+    redirectUrl: "https://www.youtube.com/watch?v=QqLOL1eeTP4",
+    tags: ["DEFAULT COSTUME", "HOLO ID COLLAB", "HOLOH3RO", "PON"],
   },
   {
     id: 11,
-    title: "Video Baru Zeta",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    title:
+      "Teriakan Kaela, Zeta PON, Kobo Kena Jumpscare - Hololive ID Funny Moments #12",
+    image: `https://i.ytimg.com/vi/1I8XH5n8-TY/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBgNONngq2Jdun59Qf_fnKLvScCSw`,
     images: [
       {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        original: `https://i.ytimg.com/vi/1I8XH5n8-TY/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBgNONngq2Jdun59Qf_fnKLvScCSw`,
+        thumbnail: `https://i.ytimg.com/vi/1I8XH5n8-TY/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBgNONngq2Jdun59Qf_fnKLvScCSw`,
       },
     ],
+    redirectUrl: "https://www.youtube.com/watch?v=1I8XH5n8-TY&t=387s",
+    tags: ["DEFAULT COSTUME", "HOLO ID COLLAB"],
   },
   {
     id: 12,
-    title: "Video Baru Zeta",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    title:
+      "Kaela dan Kobo diusir karena lupa ultahnya sampai nyanyi lagu buat Zeta [HoloClip Sub ID]",
+    image: `https://i.ytimg.com/vi/1SKI1xSF-KE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCbTpc5tu64noMm2hogLY-1Yo-Oag`,
     images: [
       {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        original: `https://i.ytimg.com/vi/1SKI1xSF-KE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCbTpc5tu64noMm2hogLY-1Yo-Oag`,
+        thumbnail: `https://i.ytimg.com/vi/1SKI1xSF-KE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCbTpc5tu64noMm2hogLY-1Yo-Oag`,
       },
     ],
+    redirectUrl: "https://www.youtube.com/watch?v=1SKI1xSF-KE",
+    tags: ["DEFAULT COSTUME", "HOLO ID COLLAB", "HOLOH3RO", "PON"],
   },
   {
     id: 13,
-    title: "Video Baru Zeta",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    title:
+      "Zeta langsung ngambek ketika kobo ngomong 'aa jangan dong'[Kobo/Kaela/Zeta]",
+    image: `https://i.ytimg.com/vi/3xQWFEQLuDk/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLC0NDV5CtmSGEppXHOTKY9M4MN4KQ`,
     images: [
       {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        original: `https://i.ytimg.com/vi/3xQWFEQLuDk/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLC0NDV5CtmSGEppXHOTKY9M4MN4KQ`,
+        thumbnail: `https://i.ytimg.com/vi/3xQWFEQLuDk/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLC0NDV5CtmSGEppXHOTKY9M4MN4KQ`,
       },
     ],
+    redirectUrl: "https://www.youtube.com/watch?v=3xQWFEQLuDk&t=5s",
+    tags: ["KIMONO COSTUME", "HOLO ID COLLAB", "HOLOH3RO"],
   },
   {
     id: 14,
-    title: "Video Baru Zeta",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    title:
+      "Kobo niruin Zeta di depan Zetanya langsung [Kaela / Moona / Kobo / Zeta]",
+    image: `https://i.ytimg.com/vi/6lzjFC5k2m0/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDboC0hYuIMHGIwkydqrsslCr4AHw`,
     images: [
       {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        original: `https://i.ytimg.com/vi/6lzjFC5k2m0/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDboC0hYuIMHGIwkydqrsslCr4AHw`,
+        thumbnail: `https://i.ytimg.com/vi/6lzjFC5k2m0/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDboC0hYuIMHGIwkydqrsslCr4AHw`,
       },
     ],
+    redirectUrl: "https://www.youtube.com/watch?v=6lzjFC5k2m0&t=3s",
+    tags: ["DEFAULT COSTUME", "HOLO ID COLLAB", "HOLOH3RO"],
   },
   {
     id: 15,
-    title: "Video Baru Zeta",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    title: "zeta ngambek gara gara keusilan kobo",
+    image: `https://i.ytimg.com/vi/9S4mLTxC3uM/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBynMc0P7gKqtUVa_tP20dTvki-Ig`,
     images: [
       {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        original: `https://i.ytimg.com/vi/9S4mLTxC3uM/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBynMc0P7gKqtUVa_tP20dTvki-Ig`,
+        thumbnail: `https://i.ytimg.com/vi/9S4mLTxC3uM/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBynMc0P7gKqtUVa_tP20dTvki-Ig`,
       },
     ],
+    redirectUrl: "https://www.youtube.com/watch?v=9S4mLTxC3uM",
+    tags: ["DEFAULT COSTUME", "HOLO ID COLLAB", "HOLOH3RO"],
   },
   {
     id: 16,
-    title: "Video Baru Zeta",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    title: "Moment Bang Al dimintain PC sama zeta",
+    image: `https://i.ytimg.com/vi/LlfVZfIk9zc/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDu3Wg65x497HkWRlRFI7BMZZaytw`,
     images: [
       {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        original: `https://i.ytimg.com/vi/LlfVZfIk9zc/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDu3Wg65x497HkWRlRFI7BMZZaytw`,
+        thumbnail: `https://i.ytimg.com/vi/LlfVZfIk9zc/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDu3Wg65x497HkWRlRFI7BMZZaytw`,
       },
     ],
+    redirectUrl: "https://www.youtube.com/watch?v=LlfVZfIk9zc",
+    tags: ["DEFAULT COSTUME"],
   },
   {
     id: 17,
-    title: "Video Baru Zeta",
-    image: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
+    title:
+      "Momen Bang Al mampir ke live stream Zeta dan ngasih Superchat merah",
+    image: `https://i.ytimg.com/vi/HRe8uu1YUNk/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBGPV7wPSXk0yyA0cIRv5SUgg8GvQ`,
     images: [
       {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-3.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-1.png`,
-      },
-      {
-        original: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
-        thumbnail: `${process.env.REACT_APP_WEB_URL}/image/banner/zeta-banner-2.png`,
+        original: `https://i.ytimg.com/vi/HRe8uu1YUNk/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBGPV7wPSXk0yyA0cIRv5SUgg8GvQ`,
+        thumbnail: `https://i.ytimg.com/vi/HRe8uu1YUNk/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBGPV7wPSXk0yyA0cIRv5SUgg8GvQ`,
       },
     ],
+    redirectUrl: "https://www.youtube.com/watch?v=HRe8uu1YUNk",
+    tags: ["GELORA COSTUME"],
   },
 ];
 

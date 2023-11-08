@@ -10,6 +10,7 @@ const pages = [
   { name: "Video", tag: "/video" },
   { name: "Product", tag: "/product" },
   { name: "Costume", tag: "/costume" },
+  { name: "About", tag: "/about" },
 ];
 
 const sosmed = [

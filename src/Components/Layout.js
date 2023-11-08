@@ -19,6 +19,8 @@ import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import HumbergerIcon from "@mui/icons-material/Menu";
+import { useNavigate } from "react-router-dom";
+import { AddActionGA } from "../Services/GA";
 
 const pages = [
   { name: "Home", tag: "/" },
@@ -72,7 +74,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 function Layout(props) {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const navigate = useNavigate();
   const [menuActive, setMenuActive] = React.useState("/");
   const [state, setState] = React.useState({
     top: false,
@@ -94,6 +96,17 @@ function Layout(props) {
     }
 
     setState({ ...state, [anchor]: open });
+  };
+
+  const redirectPageSearch = (page, searchText) => {
+    AddActionGA("search", searchText, page);
+    navigate(page);
+  };
+
+  const onKeyDown = (e) => {
+    if (e.key === "Enter") {
+      redirectPageSearch("/video?search=" + e.target.value, e.target.value);
+    }
   };
 
   const list = (anchor) => (
@@ -209,19 +222,15 @@ function Layout(props) {
           </Box>
           <Box
             sx={{
-              background:
-                "linear-gradient(119deg, rgba(65,198,219,1) 0%, rgba(36,174,223,1) 37%, rgba(75,157,236,1) 100%)",
+              backgroundColor: "#2d4b70",
               borderRadius: 10,
               width: "200px",
               border: "2px solid #ffffffd1",
               display: { xs: "none", md: "flex" },
             }}>
             <Search
-              sx={{
-                background:
-                  "linear-gradient(119deg, rgba(65,198,219,1) 0%, rgba(36,174,223,1) 37%, rgba(75,157,236,1) 100%)",
-                borderRadius: 10,
-              }}>
+              sx={{ backgroundColor: "#2d4b70", borderRadius: 10 }}
+              onKeyDown={onKeyDown}>
               <SearchIconWrapper>
                 <SearchIcon />
               </SearchIconWrapper>

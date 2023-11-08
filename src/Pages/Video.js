@@ -26,7 +26,9 @@ import { AddPageViewGA, AddActionGA, AddEventGA } from "../Services/GA";
 
 export default function Video() {
   const navigate = useNavigate();
+
   const [searchParams] = useSearchParams();
+
   const [tagActiveId, setTagActiveId] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
   const [isLoadingContent, setIsLoadingContent] = useState(false);
@@ -35,6 +37,7 @@ export default function Video() {
   const [tagName, setTagName] = useState("ALL");
   const [page, setPage] = useState(1);
   const [data, setData] = useState([]);
+  let search = searchParams.get("search");
 
   useEffect(() => {
     let pathname = window.location.pathname;
@@ -50,14 +53,25 @@ export default function Video() {
         return;
       }
     }
-    return setData(VideoData.slice(0, limit));
+
+    let videoDataAll = VideoData;
+    if (search && typeof search == "string" && search != "") {
+      videoDataAll = videoDataAll.filter((v) => {
+        if (v.title.toUpperCase().search(search.toUpperCase()) <= 0) {
+          return false;
+        }
+        return true;
+      });
+    }
+
+    return setData(videoDataAll.slice(0, limit));
   }, []);
 
   useEffect(() => {
     setData(getFilterData());
     setIsLoading(false);
     setIsLoadingContent(false);
-  }, [tagName, page]);
+  }, [tagName, page, search]);
 
   const redirectPage = (page) => {
     AddActionGA("click", "navbar", page);
@@ -85,8 +99,23 @@ export default function Video() {
 
   const getFilterData = () => {
     let filterData = VideoData;
+
+    if (search && typeof search == "string" && search != "") {
+      filterData = filterData.filter((v) => {
+        if (v.title.toUpperCase().search(search.toUpperCase()) <= 0) {
+          return false;
+        }
+        return true;
+      });
+    }
+
     if (tagName != "ALL") {
       filterData = VideoData.filter((v) => {
+        if (search && typeof search == "string" && search != "") {
+          if (v.title.toUpperCase().search(search.toUpperCase()) < 0)
+            return false;
+        }
+
         if (Array.isArray(v.tags)) {
           if (v.tags.includes(tagName)) {
             return true;
@@ -113,6 +142,7 @@ export default function Video() {
     setTimeout(function () {
       setPage(1);
       setTagName(tag.name);
+      setIsLoadingContent(false);
     }, 1000);
 
     setTagActiveId(tag.id);
@@ -161,6 +191,19 @@ export default function Video() {
             VIDEO CLIP
           </Typography>
         </Box>
+        {search && search != "" && (
+          <Typography
+            variant="h1"
+            noWrap
+            sx={{
+              fontFamily: "monospace",
+              // fontWeight: 700,
+              // color: "black",
+              fontSize: { xs: "14px", md: "20px" },
+            }}>
+            Search: {search}
+          </Typography>
+        )}
         <TagItem
           data={VideoTagData}
           tagActiveId={tagActiveId}
