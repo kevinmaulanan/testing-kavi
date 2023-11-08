@@ -84,7 +84,7 @@ export default function Costume() {
 
         <ContentProduct
           contentTitle="Lihat Juga Productnya"
-          data={ProductData.slice(0, 4)}
+          data={ProductData.slice(0, 6)}
           redirectPage={redirectPage}
           redirectPageByButton={redirectPageByButton}
           redirectUrl="/product"

@@ -25,6 +25,7 @@ const pages = [
   { name: "Video", tag: "/video" },
   { name: "Product", tag: "/product" },
   { name: "Costume", tag: "/costume" },
+  { name: "About", tag: "/about" },
 ];
 
 const Search = styled("div")(({ theme }) => ({
@@ -208,13 +209,19 @@ function Layout(props) {
           </Box>
           <Box
             sx={{
-              backgroundColor: "#2d4b70",
+              background:
+                "linear-gradient(119deg, rgba(65,198,219,1) 0%, rgba(36,174,223,1) 37%, rgba(75,157,236,1) 100%)",
               borderRadius: 10,
               width: "200px",
               border: "2px solid #ffffffd1",
               display: { xs: "none", md: "flex" },
             }}>
-            <Search sx={{ backgroundColor: "#2d4b70", borderRadius: 10 }}>
+            <Search
+              sx={{
+                background:
+                  "linear-gradient(119deg, rgba(65,198,219,1) 0%, rgba(36,174,223,1) 37%, rgba(75,157,236,1) 100%)",
+                borderRadius: 10,
+              }}>
               <SearchIconWrapper>
                 <SearchIcon />
               </SearchIconWrapper>

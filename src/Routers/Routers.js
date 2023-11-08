@@ -7,6 +7,7 @@ import Costume from "../Pages/ZetaCostume";
 import VideoDetail from "../Pages/VideoDetail";
 import CostumeDetail from "../Pages/CostumeDetail";
 import ProductDetail from "../Pages/ProductDetail";
+import About from "../Pages/About";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: "/costume/:id",
     element: <CostumeDetail />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
 ]);
 
