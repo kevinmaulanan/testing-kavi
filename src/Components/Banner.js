@@ -121,7 +121,7 @@ const Banner = () => {
             }}>
             <Box
               component={"img"}
-              alt={"Banner Zeta"}
+              alt={image}
               width={"100%"}
               height={"100%"}
               key={index}

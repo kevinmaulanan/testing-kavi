@@ -40,7 +40,7 @@ export default function Footer(props) {
             <Box sx={{ display: "flex" }}>
               <Box
                 component={"img"}
-                alt={"Logo Zeta"}
+                alt={`${process.env.REACT_APP_WEB_URL}/image/logo-vestia-zeta.png`}
                 sx={{
                   width: { xs: "100px", md: "300px" },
                   height: { xs: "150px", md: "250px" },

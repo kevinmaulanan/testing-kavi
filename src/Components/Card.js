@@ -32,7 +32,7 @@ export default function CardItem(props) {
                 <CardMedia
                   component="img"
                   image={item.image}
-                  alt="green iguana"
+                  alt={item.image}
                   sx={{
                     height: { xs: "100px", md: "140px" },
                     transition: "0.4s ease;",

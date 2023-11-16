@@ -57,7 +57,7 @@ export default function ProductDetail(props) {
 
         <Box
           component={"img"}
-          alt={"About Zeta"}
+          alt="https://api.duniagames.co.id/api/content/upload/file/19825092321671378189.jpg"
           width={"100%"}
           height={"100%"}
           src={

@@ -31,7 +31,7 @@ export default function CardCostume(props) {
                   // justifyContent: "center",
                 }}
                 image={costume.image}
-                alt="Live from space album cover"
+                alt={costume.image}
               />
               <CardContent
                 sx={{

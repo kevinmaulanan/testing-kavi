@@ -153,7 +153,7 @@ function Layout(props) {
           </Typography> */}
           <Box
             component={"img"}
-            alt={"Logo Zeta"}
+            alt={`${process.env.REACT_APP_WEB_URL}/image/logo-vestia-zeta.png`}
             sx={{
               width: { xs: "100px", md: "180px" },
             }}
